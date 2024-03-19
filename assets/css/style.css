@@ -1,0 +1,416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Forum&display=swap');
+
+/* ROOT */
+:root{
+  /* COLORS */
+  --GOLD: hsl(38, 61%, 73%);
+  --GREY: hsla(30, 3%, 34% 1);
+  --SILVER: hsla(0, 0%, 65%, 1);
+  --SM0KY-BLACK-1:  hsla(40, 12%, 5%, 1);
+  --SM0KY-BLACK-2:  hsla(30, 8%, 5%, 1);
+  --SM0KY-BLACK-3: hsla(0, 3%, 7%, 1);
+  --WHITE: hsl(0, 0%, 100%);
+  --EERIE-BLACK: hsla(180, 2%, 8%, 1);
+
+  /* CIRCLE SIZES */
+  --CIRCLE-NORMAL: 100px;
+  --CIRCLE-L-NORMAL: 110px;
+
+  /* FONT SIZE */
+  --FS-S: 1.2rem;
+  --FS-M: 1.5rem;
+  --FS-MM: 2rem;
+  --FS-L: 2.5rem;
+  --FS-XL: 3rem;
+  --FS-M-XL: 3.5rem;
+  --FS-XXL: 4rem;
+
+  /* FONT FAMILY*/
+  --FF-FORUM: 'Forum', cursive;
+  --FF-DM_S: 'DM Sans', sans-serif;
+
+  /*  PADDING */
+  --RES-PAD: 1.1rem 2.7rem;
+  /*  --RES-PAD: 1.3rem 2.7vw; */
+
+  /* GOLDEN BORDER */
+  --G-BORDER: 2px solid var(--GOLD);
+  --G-BORDER-SLIM: 1px inset var(--GOLD);
+  --W-BORDER-SLIM: 2px solid var(--WHITE);
+
+  /* HR */
+   --HR: #cccccc42;
+}
+
+
+
+/* GENERAL STYLING */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 66.5%;
+  scroll-behavior: smooth;
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+}
+
+body{
+font-size: var(--FS-S);
+font-family: var(--FF-DM_S);
+color: var(--WHITE);
+background: var(--GOLD);
+}
+
+img,
+ion-icon,
+textarea,
+button,
+input{ display: block; }
+
+
+li{ list-style: none; }
+
+a{
+  text-decoration: none;
+  color: inherit;
+  /* display: block; */
+}
+
+button{
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+/* PRELOADER */
+.preloader{
+  position: absolute;
+  background-color: var(--GOLD);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+ z-index: 1;
+ transition: opacity 1s ease-in-out;
+ overflow: hidden;
+}
+
+.preloader-circle{
+  width: var(--CIRCLE-L-NORMAL);
+  height: var(--CIRCLE-L-NORMAL);
+  border-radius: 50%;
+  background-color: var(--GOLD);
+ border: var(--WHITE) solid 2px;
+ border-top: var(--SM0KY-BLACK-1) solid 2px;
+ animation: rollingCircle .7s linear infinite;
+}
+
+.preloader-text{
+  font-size: calc(2rem + 3vw);
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the textcolor is invisible, this property carves out the textsfrom the invisibility*/
+   letter-spacing: 15px;
+   text-transform: uppercase;
+  font-family:var(--FF-DM_S) ;
+   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: fadingText 2s ease infinite;
+  /* background-size: 500%;  */
+ 
+}
+
+
+
+/* HERO PAGE */
+.landingPage{
+  position: relative;
+ top: -1000px;
+}
+
+.loaded{
+  animation: landingPage 1s linear forwards;
+}
+
+.heroPage{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: red;
+}
+
+.heroPage-Img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: yellowgreen; 
+overflow: hidden;
+}
+
+.heroPage-Img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.15); 
+  transition: all 100ms ease;
+  animation: smooth 7s linear forwards;
+}
+
+.heroPage-Texts{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+padding: 2rem;
+text-align: center;
+gap: 1.3rem;
+overflow: hidden;
+transition: all 100ms ease;
+/* transition: animation 600ms ease; */
+}
+
+.heroTexts--heading{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--GOLD);
+}
+
+
+.heroTexts--heading::after{
+content: url('../images/separator.svg');
+display: block;
+width: 100px;
+margin-block-start: 7px;
+margin-inline: auto;
+animation: text 7s linear forwards;
+}
+
+.heroTexts-btn{
+  margin-inline: auto;
+}
+
+.btnAnim{
+  padding: var(--RES-PAD);
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 2px;
+  border: var(--G-BORDER);
+  color: var(--GOLD);
+  font-size: var(--FS-S);
+}
+
+.heroTexts--cursiveTexts{
+  font-family: var(--FF-FORUM);
+  text-transform: capitalize;
+  font-size: var(--FS-L);
+}
+
+.text-anim{
+  animation: text 7s linear forwards;
+}
+
+/* .hero-page-item{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hero-page-item--active{
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+.hope{
+  animation: smooth 7s linear forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+/* ROLLING CIRCLE ANIMATION */
+@keyframes rollingCircle {
+  0%{
+transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* FADING TEXT ANIMATION */
+@keyframes fadingText {
+  0%{
+   background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.574) );
+  } 
+ 50%{
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.026), rgb(0, 0, 0), rgba(0, 0, 0, 0.082) );
+ }
+  100%{
+   background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+  }
+ }
+
+/*LANDING PAGE ANIMATION */
+@keyframes landingPage {
+  100%{
+ top: 0;
+ z-index: 1;
+  }
+}
+
+/* HERO PAGE TEXT ANIMATION */
+@keyframes text {
+  0%{
+    transform: translateY(15px); 
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+/* HERO PAGE IMAGE ANIMATION */
+@keyframes smooth {
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(1.15);
+  }
+}
+
+
+
+
+
+
+/* MEDIA QUERIES
+@media screen and (max-width:850px) {
+  .landingPage-topBar{
+    display: none;
+  }
+
+  .topbar-hr{
+    display: none;
+  }
+
+  .landingPage-navBar--menuBar_findTableBtn{
+    display: none;
+  }
+  .landingPageArrHead{
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (min-width:769px) {
+  /* .mobile-nav{
+    display: none;
+  } 
+  .navBar-links{
+    width: 30%;
+  }
+}
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* JUNKS
+/* display: grid;
+place-content: center; */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+/* display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center; */
+/* text-align: center; */
