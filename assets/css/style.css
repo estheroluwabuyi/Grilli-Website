@@ -4,6 +4,7 @@
 /* ROOT */
 :root{
   /* COLORS */
+  --L-GOLD:hsla(38, 61%, 73%, 0.77);
   --GOLD: hsl(38, 61%, 73%);
   --GREY: hsla(30, 3%, 34% 1);
   --SILVER: hsla(0, 0%, 65%, 1);
@@ -31,7 +32,7 @@
   --FF-DM_S: 'DM Sans', sans-serif;
 
   /*  PADDING */
-  --RES-PAD: 1.1rem 2.7rem;
+  --RES-PAD: 1.2rem 2.9rem;
   /*  --RES-PAD: 1.3rem 2.7vw; */
 
   /* GOLDEN BORDER */
@@ -40,7 +41,7 @@
   --W-BORDER-SLIM: 2px solid var(--WHITE);
 
   /* HR */
-   --HR: #cccccc42;
+   --HR: #cccccc64;
 }
 
 
@@ -139,7 +140,6 @@ input{
 }
 
 
-
 /* HERO PAGE */
 .landingPage{
   position: relative;
@@ -154,7 +154,6 @@ input{
   position: relative;
   height: 100vh;
   width: 100%;
-  background: red;
 }
 
 .heroPage-Img{
@@ -163,7 +162,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100vh;
-background-color: yellowgreen; 
+transition: animation 300ms ease;
 overflow: hidden;
 }
 
@@ -172,8 +171,7 @@ overflow: hidden;
   width: 100%;
   object-fit: cover;
   transform: scale(1.15); 
-  transition: all 100ms ease;
-  animation: smooth 7s linear forwards;
+  animation: smooth 7s linear infinite;
 }
 
 .heroPage-Texts{
@@ -188,8 +186,7 @@ padding: 2rem;
 text-align: center;
 gap: 1.3rem;
 overflow: hidden;
-transition: all 100ms ease;
-/* transition: animation 600ms ease; */
+transition: animation 300ms ease;
 }
 
 .heroTexts--heading{
@@ -202,10 +199,10 @@ transition: all 100ms ease;
 .heroTexts--heading::after{
 content: url('../images/separator.svg');
 display: block;
-width: 100px;
+width: 120px;
 margin-block-start: 7px;
 margin-inline: auto;
-animation: text 7s linear forwards;
+animation: text 7s linear infinite;
 }
 
 .heroTexts-btn{
@@ -229,27 +226,198 @@ animation: text 7s linear forwards;
 }
 
 .text-anim{
-  animation: text 7s linear forwards;
-}
-
-/* .hero-page-item{
-  visibility: hidden;
-  opacity: 0;
-}
-
-.hero-page-item--active{
-  visibility: visible;
-  opacity: 1;
-} */
-
-
-.hope{
-  animation: smooth 7s linear forwards;
+  animation: text 7s linear infinite;
 }
 
 
+/* NAV BAR LINKS */
+/* nav bar links heading */
+.navBar-links{
+  position: absolute;
+  background-color: var(--SM0KY-BLACK-1);
+  padding: 2rem 1.5rem;
+ z-index: 2;
+  width: 100%;
+  height: 100vh;
+  left: -10000px;
+  transition: left 2s ease-in-out;
+  }
+  
+  .slidingNav{
+    left: 0px;
+  }
 
 
+  .navBar-links_heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navBar-links_heading--close-btn{
+    align-self: flex-end;
+  }
+  
+  .navBar-links_heading--close-btn ion-icon{
+    border: var(--W-BORDER-SLIM);
+    border-radius: 50%;
+    padding: .32rem;
+    font-size: var(--FS-MM);
+  }
+  
+  .navBar-links_heading--logoImg {
+  align-self: center;
+  }
+
+
+  /*NAV BAR LINKS*/
+.navbar-link-item--ul{
+    text-transform: uppercase;
+    padding: 2rem .5rem;
+    font-size: var(--FS-M);
+}
+
+.navbar-link-item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 1px solid var(--HR);
+    margin-block: 7px;
+}
+
+
+.navbar-link-item--active a{
+  color: var(--GOLD);
+}
+
+.navbar-link-item:not(:first-child) a{
+  transition: color 0.3s ease;
+}
+
+.navbar-link-item:not(:first-child) a:hover,
+.navbar-link-item:not(:first-child) a:focus{
+  color: var(--GOLD);
+}
+
+
+/* LANDING PAGE TOP BAR */
+.landingPage-topBar{
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: .77rem;
+}
+
+.landingPage-topBar--addressTime,
+.landingPage-topBar--phoneMail{
+  display: flex;
+  gap: 2.5rem;
+}
+
+.topbar-icons-texts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.topbar-hr{
+  position: absolute;
+width: 100%;
+top: 3rem;
+border: 1px solid var(--HR);
+} 
+
+/* DESKSTOP ARROW HEADS */ 
+.landingPageArrHead{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+  }
+  
+  .deskstopArrHead{
+  width: 20px;
+  height: 20px;
+  border: var(--G-BORDER-SLIM);
+  transform: rotate(50deg);
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  color: var(--GOLD);
+  transition: background 600ms ease;
+  }
+  
+  .deskstopArrHead span{
+    transform: rotate(-50deg);
+  }
+
+.deskstopArrHead:hover,
+.deskstopArrHead:focus,
+.deskstopArrHead:active
+{
+  background: var(--L-GOLD);
+  color: var(--SM0KY-BLACK-1);
+}
+
+/* LANDING PAGE NAV BAR */ 
+.landingPage-navBar{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 3vw;
+}
+
+
+
+.landingPage-navBar--menuBar_findTableBtn{
+background-color: var(--GOLD);
+color: var(--EERIE-BLACK);
+font-weight: 800;
+}
+
+.landingPage-navBar--menuBar{
+  display: flex;
+  align-items: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+}
+
+
+
+/* MENU BAR DESIGN */
+.landingPage-navBar--menuBar_openMenu{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  }
+
+  
+.line{
+  width: 30px;
+  height: 2px;
+  background-color: var(--WHITE);
+  transform-origin: left;
+  animation: menuBar 400ms ease-in-out alternate infinite;
+}
+
+.line-2{
+  animation-delay: 150ms;
+}
+
+.line-3{
+  animation-delay: 350ms;
+}
 
 
 
@@ -329,7 +497,7 @@ transform: rotate(0deg);
 /* HERO PAGE TEXT ANIMATION */
 @keyframes text {
   0%{
-    transform: translateY(15px); 
+    transform: translateY(20px); 
   }
   100%{
     transform: translateY(0px);
@@ -348,11 +516,20 @@ transform: rotate(0deg);
 }
 
 
+/* MENU BAR ANIMATION */
+@keyframes menuBar {
+  0%{
+    transform: scaleX(1);
+  }
+  100%{
+   transform: scaleX(0.5);
+  }
+}
 
 
 
 
-/* MEDIA QUERIES
+/* MEDIA QUERIES */
 @media screen and (max-width:850px) {
   .landingPage-topBar{
     display: none;
@@ -371,24 +548,14 @@ transform: rotate(0deg);
 
 }
 
-
-
 @media screen and (min-width:769px) {
   /* .mobile-nav{
     display: none;
-  } 
+  } */
   .navBar-links{
     width: 30%;
   }
 }
-
-
-
-
-
-
-
- */
 
 
 
