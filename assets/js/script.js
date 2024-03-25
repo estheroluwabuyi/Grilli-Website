@@ -19,7 +19,6 @@ const navQuickLinksUl = document.querySelector('.navbar-link-item--ul');
 
 const heroHomePage = document.querySelector('.hero-home-page')
 
-// const arrHeads = document.querySelectorAll('.deskstopArrHead');
 const arrHead1 = document.querySelector('.deskstopArrHead-1');
 
 const arrHead2 = document.querySelector('.deskstopArrHead-2');
@@ -51,18 +50,6 @@ if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
 }
 });
 
-// for (const arrHead of arrHeads) {
-//     arrHead.addEventListener('click', () => {
-//         console.log(99);
-// if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
-    
-// }
-
-
-//     });
-// };
-
-
 
 //PRELOADER
 window.addEventListener('load', ()=>{
@@ -79,14 +66,7 @@ const imgUrls = [
     './assets/images/hero-slider-3.jpg'
 ];
 
-let currentIndex = 0;
-
-function changeImg() {
-
-    imgEl.src = imgUrls[currentIndex];
-
-    currentIndex = (currentIndex + 1) % imgUrls.length;
-
+function textChanger() {
     if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
         heroHeadText.innerHTML = `Traditional & Hygeine`;
         heroCursiveText.innerHTML = `For the Love of <br>
@@ -104,6 +84,17 @@ function changeImg() {
                            Tells a Story`;
                          
     };
+}
+
+
+let currentIndex = 0;
+
+function changeImg() {
+
+    imgEl.src = imgUrls[currentIndex];
+
+    currentIndex = (currentIndex + 1) % imgUrls.length;
+    textChanger();
     
     setTimeout(changeImg, 7000);
 };
