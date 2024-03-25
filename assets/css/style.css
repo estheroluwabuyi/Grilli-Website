@@ -425,7 +425,7 @@ font-weight: 800;
   bottom: 0;
  right:0;
  margin-inline:3rem;
- margin-block-end: 3rem;
+ margin-block-end: 5rem;
 }
 
 .hero-page-rotatingSquare::before{
