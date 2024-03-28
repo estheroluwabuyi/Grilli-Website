@@ -65,7 +65,6 @@ body{
 font-size: var(--FS-S);
 font-family: var(--FF-DM_S);
 color: var(--WHITE);
-background: var(--GOLD);
 }
 
 img,
@@ -109,7 +108,7 @@ input{
   justify-content: center;
   align-items: center;
   gap: 3rem;
- z-index: 1;
+ /* z-index: 1; */
  transition: opacity 1s ease-in-out;
  overflow: hidden;
 }
@@ -382,7 +381,7 @@ border: 1px solid var(--HR);
 .landingPage-navBar--menuBar_findTableBtn{
 background-color: var(--GOLD);
 color: var(--EERIE-BLACK);
-font-weight: 800;
+font-weight: 700;
 }
 
 .landingPage-navBar--menuBar{
@@ -425,7 +424,7 @@ font-weight: 800;
   bottom: 0;
  right:0;
  margin-inline:3rem;
- margin-block-end: 10rem;
+ margin-block-end: 5rem;
 }
 
 .hero-page-rotatingSquare::before{
@@ -464,13 +463,28 @@ height: auto;
   font-weight: 700;
 }
 
+/* FIXED ARROW BUTTON */
+.fixed-arrow-btn{
+  position: fixed;
+  background: var(--GOLD);
+  color: var(--EERIE-BLACK);
+  bottom: 0;
+  right: 0;
+  margin-inline:3rem;
+  margin-block-end: 3rem;
+  transition: all 600ms ease;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  padding: .5rem;
+  border: 2px solid var(--EERIE-BLACK);
+}
 
-
-
-
-
-
-
+.fixed-arrow-btn:hover{
+  background: var(--WHITE);
+}
+.hideFixed{
+  opacity: 0;
+}
 
 
 

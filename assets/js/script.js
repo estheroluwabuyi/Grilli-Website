@@ -23,32 +23,9 @@ const arrHead1 = document.querySelector('.deskstopArrHead-1');
 
 const arrHead2 = document.querySelector('.deskstopArrHead-2');
 
+const fixedArr = document.querySelector('.fixed-arrow-btn')
 
-
-//ARROW FOR CHANGING IMAGE
-arrHead1.addEventListener('click', ()=>{
-    if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
-       imgEl.setAttribute("src", './assets/images/hero-slider-3.jpg');
-    
-    }else if (imgEl.getAttribute("src") === './assets/images/hero-slider-3.jpg') {
-        imgEl.setAttribute("src", './assets/images/hero-slider-2.jpg');
-    
-    }else if (imgEl.getAttribute("src") === './assets/images/hero-slider-2.jpg') {
-        imgEl.setAttribute("src", './assets/images/hero-slider-1.jpg');
-    }
-    });
-
-arrHead2.addEventListener('click', ()=>{
-if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
-   imgEl.setAttribute("src", './assets/images/hero-slider-2.jpg');
-
-}else if (imgEl.getAttribute("src") === './assets/images/hero-slider-2.jpg') {
-    imgEl.setAttribute("src", './assets/images/hero-slider-3.jpg');
-
-}else if (imgEl.getAttribute("src") === './assets/images/hero-slider-3.jpg') {
-    imgEl.setAttribute("src", './assets/images/hero-slider-1.jpg');
-}
-});
+// const preloader = document.querySelector('.preloader');
 
 
 //PRELOADER
@@ -56,7 +33,6 @@ window.addEventListener('load', ()=>{
     landingPageEl.classList.add('loaded');
 
 });
-
 
 
 // HERO PAGE
@@ -102,6 +78,38 @@ function changeImg() {
 changeImg(); // Initial call to start cycling through images
 
 
+//ARROW FOR CHANGING IMAGE
+arrHead1.addEventListener('click', ()=>{
+   
+    if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
+       imgEl.setAttribute("src", './assets/images/hero-slider-3.jpg');
+       textChanger();
+    
+    }else if (imgEl.getAttribute("src") === './assets/images/hero-slider-3.jpg') {
+        imgEl.setAttribute("src", './assets/images/hero-slider-2.jpg');
+        textChanger();
+    
+    }else if (imgEl.getAttribute("src") === './assets/images/hero-slider-2.jpg') {
+        imgEl.setAttribute("src", './assets/images/hero-slider-1.jpg');
+        textChanger();
+    }
+    });
+
+arrHead2.addEventListener('click', ()=>{
+if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
+   imgEl.setAttribute("src", './assets/images/hero-slider-2.jpg');
+   textChanger();
+
+}else if (imgEl.getAttribute("src") === './assets/images/hero-slider-2.jpg') {
+    imgEl.setAttribute("src", './assets/images/hero-slider-3.jpg');
+    textChanger();
+
+}else if (imgEl.getAttribute("src") === './assets/images/hero-slider-3.jpg') {
+    imgEl.setAttribute("src", './assets/images/hero-slider-1.jpg');
+    textChanger();
+}
+});
+
 
 // SLIDING NAV
 openBtn.addEventListener('click', function () {
@@ -118,3 +126,22 @@ heroHomePage.addEventListener('click', () =>{
     navQuickLinks.classList.remove('slidingNav');
     });
     
+// FIXED ARROW
+(function () {
+  const scrollPosition = 75;
+
+window.addEventListener('scroll', function () {
+    window.scrollY >= scrollPosition ?
+    ( fixedArr.classList.remove('hideFixed'), console.log(55)) :
+     ( fixedArr.classList.add('hideFixed'), console.log(50));
+    });
+
+ })();
+
+
+//  if (landingPageEl) {
+//         setTimeout(() => {
+//            fixedArr.classList.remove('hideFixed');
+//            console.log(55);
+//         }, 3000);
+//        }
