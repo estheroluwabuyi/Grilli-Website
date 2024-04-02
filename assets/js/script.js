@@ -19,9 +19,9 @@ const navQuickLinksUl = document.querySelector('.navbar-link-item--ul');
 
 const heroHomePage = document.querySelector('.hero-home-page')
 
-const arrHead1 = document.querySelector('.deskstopArrHead-1');
+const arrHead1 = document.querySelector('.desktopArrHead-1');
 
-const arrHead2 = document.querySelector('.deskstopArrHead-2');
+const arrHead2 = document.querySelector('.desktopArrHead-2');
 
 const fixedArr = document.querySelector('.fixed-arrow-btn')
 
@@ -44,7 +44,7 @@ const imgUrls = [
 
 function textChanger() {
     if (imgEl.getAttribute("src") === './assets/images/hero-slider-1.jpg') {
-        heroHeadText.innerHTML = `Traditional & Hygeine`;
+        heroHeadText.innerHTML = `Traditional Food & Hygiene`;
         heroCursiveText.innerHTML = `For the Love of <br>
                          Delicious Food`;
                          
