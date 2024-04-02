@@ -193,14 +193,16 @@ transition: animation 300ms ease;
   color: var(--GOLD);
 }
 
-
 .heroTexts--heading::after{
 content: url('../images/separator.svg');
 display: block;
 width: 120px;
 margin-block-start: 7px;
 margin-inline: auto;
-animation: text 7s linear infinite;
+}
+
+.heroTexts--heading-anim::after{
+  animation: text 7s linear infinite;
 }
 
 .heroTexts-btn{
@@ -425,7 +427,7 @@ font-weight: 700;
  right:0;
  margin-inline:3rem;
  margin-block-end: 5rem;
- margin-bottom: 13rem;
+ /* margin-bottom: 13rem; */
 }
 
 .hero-page-rotatingSquare::before{
@@ -461,7 +463,6 @@ height: auto;
   color: var(--EERIE-BLACK);
   font-size: 0.8rem;
   letter-spacing: 3px;
-  font-weight: 700;
 }
 
 /* FIXED ARROW BUTTON */
@@ -488,26 +489,67 @@ height: auto;
 }
 
 
+/* MAIN STYLING */
+main{
+  background: var(--EERIE-BLACK);
+  /* height: 100vh; */
+  width: 100%;
+  padding: 5rem 2rem;
+}
+
+.our-speciality{
+  position: relative;
+  height: 300px;
+  width: 100%;
+ overflow: hidden;
+}
+
+/* OUR SPECIALTY IMAGE STYLING */
+.our-specialty-img{
+  width: 150px;
+  height: auto;
+  transition: animation 300ms ease;
+}
+
+.our-specialty-img-1{
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.our-specialty-img-2{
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+
+.our-specialty-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(1.50);
+  animation: smoothScale 9s linear infinite;
+}
+
+/* OUR SPECIALTY TEXTS STYLING */
+.our-specialty-texts{
+  position: absolute;
+  width: 100%;
+}
+
+.our-specialty-subTexts{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ text-align: center;
+}
 
 
 
+.our-speciality-subTexts-texts{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -578,6 +620,16 @@ transform: rotate(0);
   }
 }
 
+/* OUR SPECIALTY IMAGE ANIMATION */
+@keyframes smoothScale {
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(1.50);
+  }
+}
 
 /* MENU BAR ANIMATION */
 @keyframes menuBar {
@@ -619,9 +671,6 @@ transform: rotate(0);
     width: 30%;
   }
 }
-
-main{background: #000;}
-
 
 /* JUNK
 display: grid;
