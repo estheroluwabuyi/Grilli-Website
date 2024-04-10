@@ -23,7 +23,7 @@ const arrHead1 = document.querySelector('.desktopArrHead-1');
 
 const arrHead2 = document.querySelector('.desktopArrHead-2');
 
-const fixedArr = document.querySelector('.fixed-arrow-btn')
+const fixedArr = document.querySelector('.fixed-arrow-btn');
 
 // const preloader = document.querySelector('.preloader');
 
@@ -132,8 +132,8 @@ heroHomePage.addEventListener('click', () =>{
 
 window.addEventListener('scroll', function () {
     window.scrollY >= scrollPosition ?
-    ( fixedArr.classList.remove('hideFixed'), console.log(55)) :
-     ( fixedArr.classList.add('hideFixed'), console.log(50));
+    ( fixedArr.classList.remove('hideFixed')) :
+     ( fixedArr.classList.add('hideFixed'));
     });
 
  })();
