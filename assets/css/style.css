@@ -19,8 +19,8 @@
   --CIRCLE-L-NORMAL: 110px;
 
   /* FONT SIZE */
-  --FS-S: 1.2rem;
-  --FS-M: 1.4rem;
+  --FS-S: 1.3rem;
+  --FS-M: 1.5rem;
   --FS-MM: 2.2rem;
   --FS-L: 2.5rem;
   --FS-XL: 3rem;
@@ -139,7 +139,7 @@ input{
 .preloader-text{
   font-size: calc(2rem + 3vw);
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from the invisibility*/
+  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from its invisibility*/
    letter-spacing: 15px;
    text-transform: uppercase;
   font-family:var(--FF-DM_S) ;
@@ -202,7 +202,7 @@ transition: animation 300ms ease;
 
 .heroTexts--heading{
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   color: var(--GOLD);
 }
 
@@ -235,6 +235,11 @@ margin-inline: auto;
 .heroTexts--cursiveTexts{
   font-family: var(--FF-FORUM);
   text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.heroTexts--normTexts{
+  letter-spacing: 1px;
 }
 
 .heroTexts--cursiveTexts-FS{font-size: var(--FS-L);}
@@ -253,8 +258,12 @@ margin-inline: auto;
  z-index: 2;
   width: 100%;
   height: 100vh;
-  left: -10000px;
-  transition: left 2s ease-in-out;
+  left: -1000px;
+  transition: left 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.52rem;
   }
   
   .slidingNav{
@@ -288,7 +297,7 @@ margin-inline: auto;
 .navbar-link-item--ul{
     text-transform: uppercase;
     padding: 2rem .5rem;
-    font-size: var(--FS-M);
+    font-size: var(--FS-S);
 }
 
 .navbar-link-item::after {
@@ -312,6 +321,64 @@ margin-inline: auto;
 .navbar-link-item:not(:first-child) a:hover,
 .navbar-link-item:not(:first-child) a:focus{
   color: var(--GOLD);
+}
+
+/* -------------------------------NAVBAR FOOTING----------------------- */
+.navBar-links_footing{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 2rem;
+}
+
+.navBar-links_footing_square{
+  width: 15px;
+  height: 15px;
+  border: var(--G-BORDER-SLIM);
+  transform: rotate(50deg);
+  color: var(--GOLD);
+}
+
+.navBar-links_footing_heading{
+font-family: var(--FF-FORUM);
+font-size: var(--FS-MM);
+}
+
+.navBar-links_footing_texts{
+line-height: 2;
+font-size: var(--FS-M);
+opacity: 0.77;
+}
+
+
+.navBar-links_footing_booking--phone{
+  font-size:var(--FS-M) !important;
+}
+/* --------------------HOVER UNDERLINE---------------- */
+.hover-underline{
+  position: relative;
+  max-width: max-content;
+letter-spacing: 2px;
+}
+
+.hover-underline::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  border-block: 1px solid var(--GOLD);
+  transform: scaleX(0.2);
+  opacity: 0;
+  transition: 600ms ease;
+}
+
+.hover-underline:is(:hover, :focus-visible)::after{
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 
@@ -479,6 +546,15 @@ height: auto;
   letter-spacing: 3px;
 }
 
+
+
+
+
+/* MAIN STYLING */
+main{
+  width: 100%;
+}
+
 /* FIXED ARROW BUTTON */
 .fixed-arrow-btn{
   position: fixed;
@@ -493,40 +569,36 @@ height: auto;
   border-radius: 50%;
   padding: .5rem;
   border: 2px solid var(--EERIE-BLACK);
+  z-index: 100;
 }
 
 .fixed-arrow-btn ion-icon{
-/* transform: translateY(2px); */
 transition: transform 800ms linear;
 }
 
-.fixed-arrow-btn ion-icon:hover,
-.fixed-arrow-btn ion-icon:focus,
-.fixed-arrow-btn ion-icon:active{
+.fixed-arrow-btn ion-icon:is(:hover, :focus, :active){
   transform: translateY(-5px);
 }
 
-
-.fixed-arrow-btn:hover{
+.fixed-arrow-btn:is(:hover, :focus-visible, :active){
   background: var(--EERIE-BLACK);
   border: 2px  solid var(--GOLD);
   color:var(--GOLD);
 }
+
 .hideFixed{
   opacity: 0;
 }
 
 
-/* MAIN STYLING */
-main{
-  background: var(--EERIE-BLACK);
-  width: 100%;
-}
-
+/* SERVICE STYLING */
 .service{
  position: relative;
  width: 100%;
- padding:3rem 2rem;
+ padding:5rem 2rem;
+ z-index: 1;
+ overflow: hidden;
+ background: var(--SM0KY-BLACK-1);
 }
 
 .service-subTexts{
@@ -536,17 +608,18 @@ justify-content: center;
 align-items: center;
 text-align: center;
 gap: 2rem;
-margin-bottom: 3rem;
+margin-bottom: 5rem;
 }
 
 .service-subTexts-texts{
 font-size: var(--FS-M);
+line-height: 1.8;
 }
 
 .service--container{
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -567,7 +640,7 @@ height: 100%;
 transition:transform 700ms ease;
 }
 
-.service--container_card_img img:hover{
+.service--container_card_img img:is(:hover, :focus, :active){
   transform: scale(1.15);
 }
 
@@ -586,102 +659,140 @@ font-family: var(--FF-FORUM);
 font-size: 2rem;
 }
 
-.hover-underline{
-  position: relative;
-  max-width: max-content;
+.service--container_card_textB{
   color: var(--GOLD);
+}
+
+.service-img-shapes{
+position: absolute;
+top: 0;
+right: 0;
+display: flex;
+height: 100%;
+width: 100%;
+flex-direction: column;
+justify-content: space-between;
+z-index: -1;
+}
+
+.service-img-shapes-img-1{
+align-self: flex-end;
+}
+
+.service-img-shapes-img img{
+  animation: smoothScale 9s linear infinite;
+}
+
+
+/*--------------------------ABOUT US------------------------ */
+.about-us{
+ background: var(--SM0KY-BLACK-3);
+ width: 100%;
+ padding: 5rem 2rem;
+ /* display: flex; */
+}
+
+.about-us-texts{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+gap: 2rem;
+}
+
+.about-us-texts-texts{
+  margin-bottom: 3rem;
+}
+
+.about-us-texts-bookings_heading{
 letter-spacing: 2px;
+margin-bottom: .7rem;
 }
 
-.hover-underline::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 5px;
-  border-block: 1px solid var(--GOLD);
-  transform: scaleX(0.2);
-  opacity: 0;
-  transition: 600ms ease;
+.about-us-texts-bookings_phone{
+  font-size: var(--FS-MM);
+  letter-spacing: 3px;
+  color: var(--GOLD);
 }
 
-.hover-underline:is(:hover, :focus-visible)::after{
-  transform: scaleX(1);
-  opacity: 1;
+.about-us-texts-bookings_btn{
+  margin-top: 2rem;
+  margin-inline: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .hidden{
   display: none;
 }
-/* OUR service IMAGE STYLING
-.kk{
-  display: flex;
-  flex-direction: column;
-}
-.service-img{
-  width: 150px;
-  height: auto;
-  transition: animation 300ms ease;
- overflow: hidden;
-}
-
-.service-img-1{
-/* position: absolute;
-top: 0;
-right: 0; 
-align-self: flex-end;
-}
-
-.service-img-2{
- /* position: absolute;
- bottom: 0;
- left: 0; 
- align-self: flex-start;
-}
-
-.service-img img{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transform: scale(1.50);
-  animation: smoothScale 9s linear infinite;
-}
-
-/* OUR service TEXTS STYLING 
-.service-texts{
-  position: absolute;
-  
-  width: 100%;
-}
-
-.service-subTexts{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- text-align: center;
- padding: 5rem;
- gap: 1.3rem;
- 
-}
-
-.service-subTexts-subHeading{
-font-size: var(--FS-MM);
-}
-
-.service-subTexts-texts{
-font-size: var(--FS-M);
-line-height: 1.5;
-letter-spacing: .55px;
-} */
-
-
-
-
-
 
 
 /* ANIMATIONS */
@@ -748,7 +859,7 @@ transform: rotate(0);
   }
 }
 
-/* OUR service IMAGE ANIMATION */
+/*SERVICE SHAPE IMAGES STYLING*/
 @keyframes smoothScale {
   0%{
     transform: scale(1);
@@ -802,13 +913,28 @@ transform: rotate(0);
   .service-subTexts-texts{
     width: 50%;
     }
-
+    
+   
     .service--container{
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 100%);
+    }
+
+    .service--container_card-2{
+      align-self: end;
+    }
+
+    .heroTexts--normTexts{
+      letter-spacing: 2px;
+      font-size: var(--FS-M);
     }
 }
-
+@media screen and (max-height: 600px){
+.navBar-links_footing,
+.hero-page-rotatingSquare{
+  opacity: 0;
+}
+}
 /* JUNK
 display: grid;
 place-content: center;
