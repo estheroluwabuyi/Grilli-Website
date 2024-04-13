@@ -110,7 +110,7 @@ input{
 }
 
 
-/* PRELOADER */
+/* PRELOADER
 .preloader{
   position: absolute;
   background-color: var(--GOLD);
@@ -121,7 +121,7 @@ input{
   justify-content: center;
   align-items: center;
   gap: 3rem;
- /* z-index: 1; */
+ /* z-index: 1; 
  transition: opacity 1s ease-in-out;
  overflow: hidden;
 }
@@ -139,7 +139,7 @@ input{
 .preloader-text{
   font-size: calc(2rem + 3vw);
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from its invisibility*/
+  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from its invisibility
    letter-spacing: 15px;
    text-transform: uppercase;
   font-family:var(--FF-DM_S) ;
@@ -148,13 +148,13 @@ input{
   -webkit-background-clip: text;
   animation: fadingText 2s ease infinite;
   background-size: 500%; 
-}
+} */
 
 
 /* HERO PAGE */
 .landingPage{
   position: relative;
- top: -1000px;
+ /* top: -1000px; */
 }
 
 .loaded{
@@ -508,7 +508,6 @@ font-weight: 700;
  right:0;
  margin-inline:3rem;
  margin-block-end: 12rem;
- /* margin-bottom: 13rem; */
 }
 
 .hero-page-rotatingSquare::before{
@@ -597,7 +596,6 @@ transition: transform 800ms linear;
  width: 100%;
  padding:5rem 2rem;
  z-index: 1;
- overflow: hidden;
  background: var(--SM0KY-BLACK-1);
 }
 
@@ -625,13 +623,13 @@ line-height: 1.8;
 
 
 .service--container_card_img{
-  width: 100%;
+  position: relative;
+width: 100%;
 height: auto;
 margin-bottom: 3rem;
 overflow: hidden;
-transition:transform 700ms ease;
-border-radius: 10px;
-border: solid var(--GOLD) 3px;
+border-radius: 20px;
+border: solid var(--GOLD) 4px;
 }
  
 .service--container_card_img img{
@@ -640,8 +638,19 @@ height: 100%;
 transition:transform 700ms ease;
 }
 
-.service--container_card_img img:is(:hover, :focus, :active){
-  transform: scale(1.15);
+
+.service--container_card_img::before{
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, .3);
+  height: 100%;
+  width: 100px;
+  left: -500px;
+  transform: skewX(-40deg);
+}
+
+.service--container_card_img:hover:before{
+animation: shine 1s ease;
 }
 
 .service--container_card_text{
@@ -673,6 +682,7 @@ width: 100%;
 flex-direction: column;
 justify-content: space-between;
 z-index: -1;
+overflow: hidden;
 }
 
 .service-img-shapes-img-1{
@@ -880,7 +890,15 @@ transform: rotate(0);
   }
 }
 
-
+/* IMAGE SHINING EFFECT */
+@keyframes  shine {
+  0%,100% {
+    left:-500px;
+  }
+50%{
+  left: 100%;
+}
+}
 
 
 /* MEDIA QUERIES */
