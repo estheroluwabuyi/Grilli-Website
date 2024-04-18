@@ -24,7 +24,7 @@
   --FS-DeskM: 1.7rem;
   --FS-MM: 2.1rem;
   --FS-L: 2.4rem;
-  --FS-XL: 2.9rem;
+  --FS-XL: 2.8rem;
   --FS-M-XL: 3.4rem;
   --FS-XXL: 3.9rem;
 
@@ -320,7 +320,7 @@ margin-inline: auto;
   color: var(--GOLD);
 }
 
-/* -------------------------------NAVBAR FOOTING----------------------- */
+/* ----------------------------NAVBAR FOOTING--------------------- */
 .navBar-links_footing{
 display: flex;
 flex-direction: column;
@@ -702,12 +702,15 @@ align-self: flex-end;
 
 /*--------------------------ABOUT US------------------------ */
 .about-us{
+  position: relative;
  background: var(--SM0KY-BLACK-3);
  width: 100%;
  padding:7rem 2rem;
+padding-bottom: 15rem;
  display: grid;
  gap: 3rem;
  overflow: hidden;
+ z-index: 1;
 }
 
 .about-us-texts{
@@ -758,7 +761,7 @@ margin-inline-start: 1rem;
 bottom: -50px;
 background: url(/assets/images/img-pattern.svg);
 background-repeat: repeat;
-width: 80px;
+width: 150px;
 height: 220px;
 display: grid;
 place-content: center;
@@ -790,17 +793,64 @@ animation: rollingImg 7s linear infinite;
 transform: translateX(50%);
 }
 
+.about-us-imgs-4{
+ width: 100%;
+bottom: 0;
+ z-index: -1;
+ margin-block-end: 10rem;
+ margin-inline-start: 3rem;
+}
+
+.about-us-imgs-4 img{
+  width: 200px;
+  height: auto;
+  animation: smoothScale 9s linear infinite;
+}
+
+
+/************************SPECIAL DISH***********************/
+.special-dish{
+ background: var(--SM0KY-BLACK-1);
+  width: 100%;
+}
+
+.special-dish_img{
+width: 100%;
+}
+
+.special-dish_img img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
 
 
 
 
+ .special-dish_texts{
+padding: 2rem;
+padding-top: 3.5rem;
+width: 100%;
+display: flex;
+justify-content: center; 
+align-items: center;
+flex-direction: column;
+}
 
+.special-dish_texts--heading::before{
+content: url('/assets/images//badge-1.png');
+display: block;
+margin-inline-start: 6rem;
+margin-block-end: 7px;
+}
+.special-dish_texts--heading{
+font-size: var(--FS-M);
+}
 
+.special-dish_texts--texts{
 
-
-
-
-
+}
+ 
 
 
 
@@ -1031,7 +1081,7 @@ left: 100%;
     }
 
     .about-us-imgs-2{
-      width: 150px;
+      width: 250px;
       height: 400px;
       }
       
@@ -1051,8 +1101,8 @@ left: 100%;
   font-size: var(--FS-DeskM);
 }
 
-.service-subTexts-subHeading{
-  font-size: var(--FS-MM);
+.heroTexts--cursiveTexts{
+  font-size: var(--FS-XL);
 }
 }
 
