@@ -205,6 +205,7 @@ transition: animation 300ms ease;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--GOLD);
+  font-size: var(--FS-M);
 }
 
 .heroTexts--heading::after{
@@ -504,11 +505,12 @@ font-weight: 700;
   bottom: 0;
  right:0;
  margin-inline:3rem;
- margin-block-end: 12rem;
+ margin-block-end: 10rem;
 }
 
 .hero-page-rotatingSquare::before{
 content: '';
+position: absolute;
 width: 100%;
 height: 100%;
 border: 1px solid var(--GOLD);
@@ -797,7 +799,7 @@ transform: translateX(50%);
  width: 100%;
 bottom: 0;
  z-index: -1;
- margin-block-end: 10rem;
+ margin-block-end: 20rem;
  margin-inline-start: 3rem;
 }
 
@@ -827,43 +829,89 @@ width: 100%;
 
 
 
- .special-dish_texts{
-padding: 2rem;
-padding-top: 3.5rem;
+.special-dish_texts{
+padding: 5rem 2rem;
 width: 100%;
 display: flex;
 justify-content: center; 
 align-items: center;
 flex-direction: column;
+
 }
 
-.special-dish_texts--heading::before{
+.special-dish_texts--badgeHeading{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.special-dish_texts--badge{
+  width: 30px;
+  height: 50px;
+}
+
+.special-dish_texts--badge img{
+  width: 100%;
+  height: auto;
+}
+
+/* .special-dish_texts--heading::before{
 content: url('/assets/images//badge-1.png');
 display: block;
 margin-inline-start: 6rem;
 margin-block-end: 7px;
-}
-.special-dish_texts--heading{
-font-size: var(--FS-M);
-}
+} */
 
 .special-dish_texts--texts{
-
+text-align: center;
 }
  
+.special-dish_subTexts-subHeading{
+  padding: 2rem;
+}
 
 
+.special-dish_texts_price{
+margin-top: 2rem;
+}
+
+.special-dish_texts_price--price{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-thru_text{
+  text-decoration: line-through;
+}
+
+.special-dish_texts_price--price > :first-child{
+  font-size: 1.5rem;
+opacity: 0.77;
+}
+
+.special-dish_texts_price--price > :last-child{
+  color: var(--GOLD);
+  font-size: var(--FS-DeskM);
+}
 
 
+/***********************SPECIAL DISH************************ */
+.menus{
+  background: var(--SM0KY-BLACK-3);
+  padding: 3rem 2rem;
+}
 
-
-
-
-
-
-
-
-
+.menus-headings{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
 
 
 
