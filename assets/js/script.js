@@ -148,47 +148,15 @@ heroHomePage.addEventListener('click', () =>{
 
 
 
-/*
-<article class="menus">
-  <section class="menus-headings">
-  <h1 class="menus-headings_heading heroTexts--heading">special selection
-  </h1>
-
-  <h2 class="menus--headings_subheading heroTexts--cursiveTexts">
-  delicious menu
-  </h2>
-</section>
-
-<section class="menus-container">
-
-<div class="menus-container_item">
-  <figure class="menus-container_item--img">
-    <img src="./assets/images/menu-1.png" alt="Greek Salad" width="100" height="100">
-  </figure>
-
-
-  <div class="menus-container_item--texts">
-
-<div class="menus-container_item--texts__heading">
-    <div class="menus-container_item--texts__headingDiv">
-    <h2 class="menus-container_item--texts__heading-heading">Greek Salad</h2>
-      <button class="menus-container_item--texts__headingBtn">seasonal</button>
-       </div>
-    
-    <div class="menus-container_item--texts__heading-price">$30.50</div>
-      </div>
-
-
-  <p class="menus-container_item--texts__texts">
-Cucumbers, Tomatoes, Red Onions, Kalamata olives, Feta cheese, Red wine vinegar, Bell pepper, and Oregano.
-  </p>
-  </div>
-  
-</div>
-
-
-</section>
 
 
 
-</article> */
+
+
+
+
+const quiz1 = 1 + '2' + 3 - '4' + 5;
+const quiz2 = (1 + '2' + 3) - '4' + 5;
+
+console.log(quiz1);
+console.log(quiz2);

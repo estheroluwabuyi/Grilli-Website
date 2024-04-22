@@ -347,7 +347,7 @@ font-size: var(--FS-MM);
 .navBar-links_footing_texts{
 line-height: 2;
 font-size: var(--FS-M);
-opacity: 0.77;
+color: var(--SILVER);
 }
 
 
@@ -890,13 +890,14 @@ margin-top: 2rem;
 
 .special-dish_texts_price--price > :first-child{
   font-size: 1.5rem;
-opacity: 0.56;
+  color: var(--SILVER);
 }
 
 .menus-container_item--texts__heading-price,
 .special-dish_texts_price--price > :last-child{
   color: var(--GOLD);
-  font-size: var(--FS-DeskM);
+  font-size: var(--FS-MM);
+  font-family: var(--FF-FORUM);
 }
 
 
@@ -912,77 +913,76 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 2rem;
-margin-bottom: 7rem;
-}
-
-.menus-container{
-
+margin-bottom: 5rem;
 }
 
 .menus-container_item{
-display: flex;
-gap: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.menus-container li{
+margin-top: 3.5rem;
 }
 
 .menus-container_item--img{
-width: 100px;
-height: 100px;
-border-radius: 20px;
-overflow: hidden;
-flex-shrink: 0;
-align-self: flex-start;
-}
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-self: flex-start;
+  transition: background-color 1s ease;
+  }
 
-.menus-container_item--img img{
-width: 100%;
-height: 100%;
-transition: transform 1s ease;
-}
-
-.menus-container_item--img:hover img{
-  transform: scale(1.15);
-}
-
-.menus-container_item--texts__heading{
-  display: flex;
-  gap: 1.3rem;
-  flex-direction: column;
-
-}
+  .menus-container_item--img:hover{
+    background-color: var(--GOLD);
+  }
+  
+  .menus-container_item--img img{
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease;
+  }
+  
+  .menus-container_item--img:hover img{
+    transform: scale(1.15);
+    opacity: 0.87;
+  }
 
 .menus-container_item--texts__heading-heading{
-font-size: var(--FS-M);
+font-size: var(--FS-DeskM);
 font-family: var(--FF-FORUM);
-margin-bottom: .5rem;
+}
+
+.menus-container_item--texts__heading-price{
+  margin-top: 1.5rem;
 }
 
 .menus-container_item--texts__headingBtn{
+  display: inline-block;
   background: var(--GOLD);
   color: var(--SM0KY-BLACK-3);
-  padding: .34rem .7rem;
+  padding: .24rem .45rem;
   text-transform: uppercase;
-  font-size: 1rem;
+ font-family: var(--FF-FORUM);
   border: inset 1px var(--GOLD);
 border-radius: 3px;
-font-weight: bold;
+margin-top: .45rem;
 }
-
 
 .menus-container_item--texts__texts{
-opacity: 0.56;
-margin-top: 1.3rem;
-line-height: 1.5;
+  color: var(--SILVER);
+margin-block-start: 1.3rem;
 }
 
+.menus-container_item--texts__heading-heading a{
+  transition: color 1s ease;
+}
 
-
-
-
-
-
-
-
-
+.menus-container_item--texts__heading-heading a:hover{
+  color: var(--GOLD);
+}
 
 
 
