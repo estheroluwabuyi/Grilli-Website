@@ -151,24 +151,76 @@ heroHomePage.addEventListener('click', () =>{
 const containerHovers = document.querySelectorAll('.menus-container_item');
 
 containerHovers.forEach(containerHover => {
-    containerHover.addEventListener('touchstart', function () {
-        // Select the image within the current container being hovered over
-        const containerImgs = containerHover.querySelector('.menus-container_item--img');
-        const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+    // Check if the device is a touchscreen device
+    const isTouchDevice = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
-        containerImgs.classList.add('menu-hover');
-        containerImgsImg.classList.add('menu-hover2');
-    });
+    // Add event listeners based on the type of device
+    if (isTouchDevice) {
+        containerHover.addEventListener('touchstart', function () {
+            // Select the image within the current container being touched
+            const containerImgs = containerHover.querySelector('.menus-container_item--img');
+            const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
 
-    containerHover.addEventListener('touchend', function () {
-        // Select the image within the current container being hovered over
-        const containerImgs = containerHover.querySelector('.menus-container_item--img');
-        const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+            containerImgs.classList.add('sample2');
+            containerImgsImg.classList.add('sample');
+        });
 
-        containerImgs.classList.remove('menu-hover');
-        containerImgsImg.classList.remove('menu-hover2');
-    });
+        containerHover.addEventListener('touchend', function () {
+            // Select the image within the current container being touched
+            const containerImgs = containerHover.querySelector('.menus-container_item--img');
+            const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+            containerImgs.classList.remove('sample2');
+            containerImgsImg.classList.remove('sample');
+        });
+    } else {
+        containerHover.addEventListener('mouseover', function () {
+            // Select the image within the current container being hovered over
+            const containerImgs = containerHover.querySelector('.menus-container_item--img');
+            const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+            containerImgs.classList.add('sample2');
+            containerImgsImg.classList.add('sample');
+        });
+
+        containerHover.addEventListener('mouseout', function () {
+            // Select the image within the current container being hovered over
+            const containerImgs = containerHover.querySelector('.menus-container_item--img');
+            const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+            containerImgs.classList.remove('sample2');
+            containerImgsImg.classList.remove('sample');
+        });
+    }
 });
+
+
+
+
+
+
+
+// const containerHovers = document.querySelectorAll('.menus-container_item');
+
+// containerHovers.forEach(containerHover => {
+//     containerHover.addEventListener('touchstart', function () {
+//         // Select the image within the current container being hovered over
+//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
+//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+//         containerImgs.classList.add('menu-hover');
+//         containerImgsImg.classList.add('menu-hover2');
+//     });
+
+//     containerHover.addEventListener('touchend', function () {
+//         // Select the image within the current container being hovered over
+//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
+//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+//         containerImgs.classList.remove('menu-hover');
+//         containerImgsImg.classList.remove('menu-hover2');
+//     });
+// });
 
 
 
