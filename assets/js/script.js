@@ -151,7 +151,7 @@ heroHomePage.addEventListener('click', () =>{
 const containerHovers = document.querySelectorAll('.menus-container_item');
 
 containerHovers.forEach(containerHover => {
-    containerHover.addEventListener('mouseover', function () {
+    containerHover.addEventListener('touchstart', function () {
         // Select the image within the current container being hovered over
         const containerImgs = containerHover.querySelector('.menus-container_item--img');
         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
@@ -160,7 +160,7 @@ containerHovers.forEach(containerHover => {
         containerImgsImg.classList.add('menu-hover2');
     });
 
-    containerHover.addEventListener('mouseout', function () {
+    containerHover.addEventListener('touchend', function () {
         // Select the image within the current container being hovered over
         const containerImgs = containerHover.querySelector('.menus-container_item--img');
         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
