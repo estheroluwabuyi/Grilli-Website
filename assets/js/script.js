@@ -169,3 +169,46 @@ containerHovers.forEach(containerHover => {
         containerImgsImg.classList.remove('menu-hover2');
     });
 });
+
+
+// containerHovers.forEach(containerHover => {
+//     containerHover.addEventListener('touchstart', function () {
+//         // Select the image within the current container being hovered over
+//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
+//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+//         containerImgs.classList.add('menu-hover');
+//         containerImgsImg.classList.add('menu-hover2');
+//     });
+
+//     containerHover.addEventListener('touchend', function () {
+//         // Select the image within the current container being hovered over
+//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
+//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+//         containerImgs.classList.remove('menu-hover');
+//         containerImgsImg.classList.remove('menu-hover2');
+//     });
+// });
+
+
+/*
+
+
+
+ */
+
+
+// containerImgs.forEach(containerImg => {
+//     containerImg.addEventListener('mouseenter', function () {
+//         console.log(100);
+//     });
+// });
+
+
+
+// const quiz1 = 1 + '2' + 3 - '4' + 5;
+// const quiz2 = (1 + '2' + 3) - '4' + 5;
+
+// console.log(quiz1);
+// console.log(quiz2);
