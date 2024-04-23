@@ -152,7 +152,7 @@ const containerHovers = document.querySelectorAll('.menus-container_item');
 
 containerHovers.forEach(containerHover => {
     containerHover.addEventListener('mouseover', function () {
-        // Select the image within the current container being hovered over
+        
         const containerImgs = containerHover.querySelector('.menus-container_item--img');
         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
 
@@ -161,7 +161,7 @@ containerHovers.forEach(containerHover => {
     });
 
     containerHover.addEventListener('mouseout', function () {
-        // Select the image within the current container being hovered over
+      
         const containerImgs = containerHover.querySelector('.menus-container_item--img');
         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
 
@@ -171,7 +171,7 @@ containerHovers.forEach(containerHover => {
 });
 
 
-
+//prevent menu link default
 
 
 
