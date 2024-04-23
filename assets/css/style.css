@@ -814,6 +814,7 @@ bottom: 0;
 .special-dish{
  background: var(--SM0KY-BLACK-1);
   width: 100%;
+  position: relative;
 }
 
 .special-dish_img{
@@ -904,7 +905,10 @@ margin-top: 2rem;
 /***********************SPECIAL DISH************************ */
 .menus{
   background: var(--SM0KY-BLACK-3);
-  padding: 4rem 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .menus-headings{
@@ -919,6 +923,7 @@ margin-bottom: 5rem;
 .menus-container_item{
   display: flex;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .menus-container li{
@@ -985,22 +990,36 @@ margin-block-start: 1.3rem;
   color: var(--GOLD);
 }
 
+.menus-btn{
+margin-top: 3.5rem;
+}
 
+.menus-btn--texts{
+text-align: center;
+font-size: var(--FS-M);
+}
 
+.menus-btn--texts > span{
+  color: var(--GOLD);
+}
 
+/* .menus-img-shapes{
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+} */
 
+.menus-img-shapes-img img{
+  animation: smoothScale 9s linear infinite;
+  object-fit: contain;
+  width: 500px;
+  height: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.menus-img-shapes-img-1{
+  align-self: flex-end;
+  }
 
 
 
@@ -1009,6 +1028,7 @@ margin-block-start: 1.3rem;
 .hidden{
   display: none;
 }
+
 
 
 /* ANIMATIONS */

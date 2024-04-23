@@ -171,6 +171,28 @@ containerHovers.forEach(containerHover => {
 });
 
 
+containerHovers.forEach(containerHover => {
+    containerHover.addEventListener('touchstart', function () {
+        
+        const containerImgs = containerHover.querySelector('.menus-container_item--img');
+        const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+        containerImgs.classList.add('menu-hover');
+        containerImgsImg.classList.add('menu-hover2');
+    });
+
+    containerHover.addEventListener('touchend', function () {
+      
+        const containerImgs = containerHover.querySelector('.menus-container_item--img');
+        const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
+
+        containerImgs.classList.remove('menu-hover');
+        containerImgsImg.classList.remove('menu-hover2');
+    });
+});
+
+
+
 //prevent menu link default
 
 
