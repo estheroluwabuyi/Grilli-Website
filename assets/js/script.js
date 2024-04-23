@@ -150,7 +150,7 @@ heroHomePage.addEventListener('click', () =>{
 
 const containerHovers = document.querySelectorAll('.menus-container_item');
 
-//FOR DESKTOP
+//FOR DESKTOP && MOBILE
 containerHovers.forEach(containerHover => {
     containerHover.addEventListener('mouseover', function () {
         // Select the image within the current container being hovered over
@@ -170,46 +170,6 @@ containerHovers.forEach(containerHover => {
         containerImgsImg.classList.remove('menu-hover2');
     });
 });
-
-
-/*
-const AddMenuClass = function (currentContainer) {
-    // Select the image within the current container being hovered over
-    const containerImgs = containerHover.querySelector('.menus-container_item--img');
-    const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
-
-    containerImgs.classList.add('menu-hover');
-    containerImgsImg.classList.add('menu-hover2');
-};
-
-const removeMenuClass = function (currentContainer) {
-    // Select the image within the current container being hovered over
-    const containerImgs = containerHover.querySelector('.menus-container_item--img');
-    const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
-
-    containerImgs.classList.remove('menu-hover');
-    containerImgsImg.classList.remove('menu-hover2');
-}
-
-//FOR DESKTOP
-containerHovers.forEach(containerHover => {
-    containerHover.addEventListener('mouseover', function() {
-        AddMenuClass(containerHover);
-    });
-
-    containerHover.addEventListener('mouseout', function() {
-        removeMenuClass(containerHover);
-    });
-}); 
- */
-
-
-// containerImgs.forEach(containerImg => {
-//     containerImg.addEventListener('mouseenter', function () {
-//         console.log(100);
-//     });
-// });
-
 
 
 // const quiz1 = 1 + '2' + 3 - '4' + 5;
