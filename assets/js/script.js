@@ -172,30 +172,7 @@ containerHovers.forEach(containerHover => {
 });
 
 
-// //FOR  MOBILE
-// containerHovers.forEach(containerHover => {
-//     containerHover.addEventListener('touchstart', function () {
-//         // Select the image within the current container being hovered over
-//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
-//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
-
-//         containerImgs.classList.add('menu-hover');
-//         containerImgsImg.classList.add('menu-hover2');
-//     });
-
-//     containerHover.addEventListener('touchend', function () {
-//         // Select the image within the current container being hovered over
-//         const containerImgs = containerHover.querySelector('.menus-container_item--img');
-//         const containerImgsImg = containerHover.querySelector('.menus-container_item--img-img');
-
-//         containerImgs.classList.remove('menu-hover');
-//         containerImgsImg.classList.remove('menu-hover2');
-//     });
-// });
-
-
 /*
-
 const AddMenuClass = function (currentContainer) {
     // Select the image within the current container being hovered over
     const containerImgs = containerHover.querySelector('.menus-container_item--img');
