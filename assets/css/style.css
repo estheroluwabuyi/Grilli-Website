@@ -1084,10 +1084,23 @@ font-style: italic;
 }
 
 
+/***********************RESERVATIONS************************/
+.reservation{
+  background: var(--SM0KY-BLACK-3);
+  padding:5rem 2rem;
+}
 
+.reservation-form{
 
+}
 
+.reservation-form__heading{
+text-align: center;
+}
 
+.reservation-heading__subtexts{
+margin-top: 1.5rem;
+}
 
 
 
@@ -1261,10 +1274,10 @@ left: 100%;
     width: 30%;
   }
 
-  .service-subTexts-textsW{
+  /* .service-subTexts-textsW{
     width: 70%;
     }
-    
+     */
    
     .service--container{
       grid-template-columns: repeat(3, 1fr);
