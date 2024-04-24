@@ -1022,6 +1022,98 @@ font-size: var(--FS-M);
   }
 
 
+/*************************TESTIMONIAL************************/
+.testimonial{
+  padding: 7rem 4.5rem;
+  background: var(--SM0KY-BLACK-1);
+  background-image: url('/assets/images/testimonial-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial span{
+  display: block;
+}
+
+.testimonial-quote{
+font-size: var(--FS-XL);
+line-height: 1.7;
+font-family: var(--FF-FORUM);
+text-align: center;
+}
+
+.testimonial-quote > span{
+  font-size: 7rem;
+}
+
+.testimonial-squares{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+  margin-top: 3rem;
+}
+
+.testimonial-squares > span{
+width: 2rem;
+height: 2rem;
+border: var(--G-BORDER);
+animation: rollingSquare 5s infinite;
+}
+
+.testimonial-avatar{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 3rem;
+gap: 1.5rem;
+}
+
+.testimonial-avatar-img{
+width: 100px;
+height: auto;
+border-radius: 50%;
+object-fit: contain;
+border: var(--G-BORDER);
+}
+
+.testimonial-avatar__caption{
+letter-spacing: 2px;
+font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
