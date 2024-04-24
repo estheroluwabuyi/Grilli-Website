@@ -1038,13 +1038,13 @@ font-size: var(--FS-M);
 
 .testimonial-quote{
 font-size: var(--FS-XL);
-line-height: 1.7;
+line-height: 1.5;
 font-family: var(--FF-FORUM);
 text-align: center;
 }
 
 .testimonial-quote > span{
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 .testimonial-squares{
