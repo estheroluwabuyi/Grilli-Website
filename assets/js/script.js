@@ -210,3 +210,15 @@ containerHovers.forEach(containerHover => {
 
 // console.log(quiz1);
 // console.log(quiz2);
+
+
+// Get the current date
+var currentDate = new Date();
+
+// Format the date as "yyyy-MM-dd" which is the required format for the input type="date"
+var formattedDate = currentDate.toISOString().split('T')[0];
+console.log(formattedDate);
+
+// Set the value of the input field to the current date
+document.getElementById('reservation-date').value = formattedDate;
+//adjust
