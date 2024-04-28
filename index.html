@@ -18,6 +18,7 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
   </head>
+
   <body>
     <!-- PRELOADER -->
     <!-- <article class="preloader">
@@ -779,6 +780,7 @@
         </figure>
       </article>
 
+      <!------------------------RESERVATION----------------------->
       <article class="reservation">
         <form class="reservation-form">
           <section class="reservation-form__heading">
@@ -802,7 +804,8 @@
                 name="name"
                 placeholder="Your Name"
                 autocomplete="off"
-                class="input-field" required
+                class="input-field"
+                required
               />
 
               <input
@@ -810,7 +813,8 @@
                 name="telephone"
                 autocomplete="off"
                 class="input-field"
-                placeholder="Phone Number" required
+                placeholder="Phone Number"
+                required
                 inputmode="numeric"
               />
             </div>
@@ -874,12 +878,59 @@
             </div>
 
             <button type="submit" class="reservation-form__form--btn btnAnim">
-             <h1> Book A Table</h1>
+              <h1>Book A Table</h1>
             </button>
           </section>
-
-          
         </form>
+
+        <section class="reservation-form__contact">
+          <h2
+            class="reservation-form__contact--heading heroTexts--cursiveTexts"
+          >
+            Contact Us
+          </h2>
+
+          <h3 class="reservation-form__contact--subheading">Booking Request</h3>
+
+          <h1
+            class="reservation-form__contact--phone about-us-texts-bookings_phone"
+          >
+            <a href="tel: +804007452859" class="hover-underline">
+              +80 (400) 745 2859
+            </a>
+          </h1>
+
+          <div class="navBar-links_footing_square"></div>
+
+          <div class="reservation-form__contact--location">
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Location
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Restaurant St, Delicious City, London 9578, UK
+              </p>
+            </div>
+
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Lunch Time
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Monday to Sunday 11:00am - 2:30pm
+              </p>
+            </div>
+
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Diner Time
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Monday to Sunday 05:00pm - 10:00pm
+              </p>
+            </div>
+          </div>
+        </section>
       </article>
     </main>
 

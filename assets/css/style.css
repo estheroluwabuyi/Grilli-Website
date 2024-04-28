@@ -75,6 +75,7 @@ body {
   font-size: var(--FS-S);
   font-family: var(--FF-DM_S);
   color: var(--WHITE);
+  background: var(--EERIE-BLACK);
 }
 
 img,
@@ -1062,11 +1063,12 @@ margin-block-end: 7px;
 /***********************RESERVATIONS************************/
 .reservation {
   background: var(--SM0KY-BLACK-3);
-  padding: 5rem 2rem;
+padding: 3rem 0;
 }
 
 .reservation-form__heading {
   text-align: center;
+  padding: 2rem;
 }
 
 .reservation-heading__subtexts {
@@ -1074,7 +1076,7 @@ margin-block-end: 7px;
 }
 
 .reservation-form__form{
-  margin-top: 5rem;
+  padding: 2rem;
 }
 
 .input-field {
@@ -1165,15 +1167,47 @@ background: var(--GOLD);
 color: var(--SM0KY-BLACK-3);
 }
 
+/* Reservation Contact */
+.reservation-form__contact{
+  background-image: url('/assets/images/form-pattern.png');
+  background-repeat: repeat;
+  background-position: center;
+  padding: 5rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+text-align: center;
+gap: 2.2rem;
+}
 
+.reservation-form__contact--location--heading,
+.reservation-form__contact--subheading{
+font-size: var(--FS-DeskM);
+letter-spacing: 1px;
+}
 
+.reservation-form__contact--heading {
+  font-size: var(--FS-MM);
+}
 
+.reservation-form__contact--location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.reservation-form__contact--locationTexts{
+  letter-spacing: 1px;
+  width: 70%;
+}
 
-
-
-
-
+.reservation-form__contact--location--texts{
+color: var(--SILVER);
+font-size: var(--FS-M);
+margin-top: 1rem;
+}
 
 
 
