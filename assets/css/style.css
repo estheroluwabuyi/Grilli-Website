@@ -1033,8 +1033,8 @@ margin-block-end: 7px;
 }
 
 .testimonial-squares > span {
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   border: var(--G-BORDER);
   animation: rollingSquare 5s infinite;
 }
@@ -1277,6 +1277,7 @@ text-align: center;
 }
 
 .updates-container{
+  margin-bottom: 3.5rem;
   /* display: flex;
   justify-content: center; */
 
@@ -1333,14 +1334,37 @@ text-transform:uppercase;
 
 .updates-card_texts--texts{
 font-family: var(--FF-FORUM);
-/* font-size: 1.5rem; */
 letter-spacing: .23rem;
 margin-top: .7rem;
 }
 
 
+/********************FOOTER**********************/
+.footer{
+  margin-top: 5rem;
+  background-image: url('/assets/images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
 
+.footer__links{
+  display: flex;
+  flex-direction: column;
+ font-size: var(--FS-M);
+ padding: 3rem;
+ display: none;
+ text-transform: uppercase;
+}
 
+.footer__links>:not(:last-child){
+  margin-bottom: 5rem;
+}
+
+/* .footer__links>:not(:nth-child(4)){
+  margin-bottom: 5rem;
+} */
 
 
 
@@ -1564,6 +1588,11 @@ margin-top: .7rem;
 
   .heroTexts--cursiveTexts {
     font-size: var(--FS-XL);
+  }
+
+  .footer__links{
+    display: block;
+  
   }
 }
 
