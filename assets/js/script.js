@@ -190,8 +190,8 @@ function handleStrengthHover() {
 strengthHover.forEach((card) => {
   card.addEventListener("mouseover", handleStrengthHover);
   card.addEventListener("mouseout", handleStrengthHover);
-//   card.addEventListener("touchstart", handleStrengthHover);
-//   card.addEventListener("touchend", handleStrengthHover);
+  card.addEventListener("touchstart", handleStrengthHover);
+  card.addEventListener("touchend", handleStrengthHover);
 });
 
 //EVENT PROPAGATION
