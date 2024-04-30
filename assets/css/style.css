@@ -1320,23 +1320,24 @@ margin: 2rem;
 position: absolute;
 bottom: 0;
 text-align: center;
+background: #0000007c;
+
+padding: 2rem 1.5rem;
 }
 
 .updates-card_texts--heading{
 color: var(--GOLD);
 letter-spacing: .35rem;
-background: var(--SM0KY-BLACK-1);
-padding: .6rem;
+/* background: var(--SM0KY-BLACK-1); */
 display: inline;
 text-transform:uppercase;
-
 }
 
 .updates-card_texts--texts{
 font-family: var(--FF-FORUM);
-font-size: var(--FS-DeskM);
-letter-spacing: .15rem;
-margin: 1.3rem 0;
+font-size: 1.5rem;
+letter-spacing: .23rem;
+margin-top: .7rem;
 }
 
 
