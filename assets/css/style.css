@@ -634,7 +634,6 @@ main {
     rgba(255, 255, 255, 0.5),
     transparent
   );
-  /* background: rgba(255, 255, 255, .3); */
   height: 100%;
   width: 100%;
   left: -1000px;
@@ -1267,18 +1266,78 @@ text-align: center;
 }
 
 
+/* UPDATES */
+.updates{
+  padding: 3rem 2rem;
+}
+
+.updates-heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.updates-container{
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+.updates-card{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 5rem;
+}
+
+.updates-card_img{
+  position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ border: none;
+ border-radius: 0;
+}
+
+.updates-card_img img{
+  object-fit: cover;
+}
 
 
+.updates-card_date{
+ position: absolute;
+top: 0;
+background: var(--SM0KY-BLACK-1);
+padding: .7rem;
+color: var(--GOLD);
+display: inline;
+font-size: var(--FS-M);
+margin: 2rem;
+}
 
+.updates-card_texts{
+position: absolute;
+bottom: 0;
+text-align: center;
+}
 
+.updates-card_texts--heading{
+color: var(--GOLD);
+letter-spacing: .35rem;
+background: var(--SM0KY-BLACK-1);
+padding: .6rem;
+display: inline;
+text-transform:uppercase;
 
+}
 
-
-
-
-
-
-
+.updates-card_texts--texts{
+font-family: var(--FF-FORUM);
+font-size: var(--FS-DeskM);
+letter-spacing: .15rem;
+margin: 1.3rem 0;
+}
 
 
 
