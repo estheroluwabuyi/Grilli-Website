@@ -765,16 +765,19 @@ main {
 
 .about-us-imgs-3 img {
   width: 130px;
-  /* height: auto; */
-  padding: 0.35rem;
+  height: auto;
+  padding: 0.45rem;
 }
 
 .about-us-imgs-3::before {
   content: url("/assets/images/badge-2-bg.png");
   position: absolute;
+  animation: rollingSquare 7s linear infinite;
   top: -3px;
-  animation: rollingImg 7s linear infinite;
   transform: translateX(50%);
+  /* top: -3px;
+  animation: rollingImg 7s linear infinite;
+  transform: translateX(50%); */
 }
 
 .about-us-imgs-4 {
