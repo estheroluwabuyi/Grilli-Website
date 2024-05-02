@@ -153,9 +153,9 @@ function handleContainerHover() {
 
 containerHovers.forEach((hover) => {
   hover.addEventListener("mouseover", handleContainerHover);
-  hover.addEventListener("mouseout", handleContainerHover);
+  // hover.addEventListener("mouseout", handleContainerHover);
   hover.addEventListener("touchstart", handleContainerHover);
-  hover.addEventListener("touchend", handleContainerHover);
+  // hover.addEventListener("touchend", handleContainerHover);
 });
 
 //FORM DATE
@@ -189,9 +189,9 @@ function handleStrengthHover() {
 
 strengthHover.forEach((card) => {
   card.addEventListener("mouseover", handleStrengthHover);
-  card.addEventListener("mouseout", handleStrengthHover);
+  // card.addEventListener("mouseout", handleStrengthHover);
   card.addEventListener("touchstart", handleStrengthHover);
-  card.addEventListener("touchend", handleStrengthHover);
+  // card.addEventListener("touchend", handleStrengthHover);
 });
 
 //EVENT PROPAGATION
