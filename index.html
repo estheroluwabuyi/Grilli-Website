@@ -1,1011 +1,1327 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<head>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="IE=edge" />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="IE=edge" />
+    <!-- PRIMARY META TAGS -->
+    <title>GRILLI - AMAZING & DELICIOUS FOOD</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="This is a Restaurant html template by the_code_gal"
+    />
 
-  <!-- PRIMARY META TAGS -->
-  <title>GRILLI - AMAZING & DELICIOUS FOOD</title>
-  <meta name="title" content="Grilli - Amazing & Delicious Food" />
-  <meta name="description" content="This is a Restaurant html template by the_code_gal" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
 
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-</head>
+  <body>
+    <!-- PRELOADER -->
+    <article class="preloader" data-preload>
+      <section class="preloader-circle"></section>
+      <section class="preloader-text">grilli</section>
+    </article>
 
-<body>
-  <!-- PRELOADER -->
-  <article class="preloader" data-preload>
-    <section class="preloader-circle"></section>
-  <section class="preloader-text">grilli</section>
-</article>
+    <!-- <a id="top"></a> -->
 
-  <!-- <a id="top"></a> -->
+    <header class="landingPage">
+      <!-- HERO PAGE -->
 
-  <header class="landingPage">
-    <!-- HERO PAGE -->
+      <!-- HERO PAGE IMAGE -->
+      <article class="heroPage">
+        <div class="hero-home-page">
+          <section class="heroPage-Img">
+            <img
+              src="./assets/images/hero-slider-1.jpg"
+              alt="hero-img"
+              width="500"
+              height="500"
+              class="heroPage-Img-img"
+            />
+          </section>
 
-    <!-- HERO PAGE IMAGE -->
-    <article class="heroPage">
-      <div class="hero-home-page">
-        <section class="heroPage-Img">
-          <img src="./assets/images/hero-slider-1.jpg" alt="hero-img" width="500" height="500"
-            class="heroPage-Img-img" />
-        </section>
+          <!-- HERO PAGE TEXTS -->
+          <section class="heroPage-Texts">
+            <h1 class="heroTexts--heading text-anim heroTexts--heading-anim">
+              traditional food & hygiene
+            </h1>
 
-        <!-- HERO PAGE TEXTS -->
-        <section class="heroPage-Texts">
-          <h1 class="heroTexts--heading text-anim heroTexts--heading-anim">
-            traditional food & hygiene
-          </h1>
+            <h2
+              class="heroTexts--cursiveTexts heroTexts--cursiveTexts-FS text-anim"
+            >
+              For the Love of <br />
+              Delicious Food
+            </h2>
 
-          <h2 class="heroTexts--cursiveTexts heroTexts--cursiveTexts-FS text-anim">
-            For the Love of <br />
-            Delicious Food
-          </h2>
+            <p class="heroTexts--normTexts text-anim">
+              Come with family & feel the joy and mouthwatering food
+            </p>
+            <p>
+              <button class="heroTexts-btn btnAnim text-anim">
+                <a href="#"> view our menu </a>
+              </button>
+            </p>
+          </section>
+        </div>
 
-          <p class="heroTexts--normTexts text-anim">
-            Come with family & feel the joy and mouthwatering food
-          </p>
-          <p>
-            <button class="heroTexts-btn btnAnim text-anim">
-              <a href="#"> view our menu </a>
+        <!-- NAV BAR QUICK LINKS -->
+        <aside class="navBar-links">
+          <section class="navBar-links_heading">
+            <button class="navBar-links_heading--close-btn">
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
-          </p>
-        </section>
-      </div>
 
-      <!-- NAV BAR QUICK LINKS -->
-      <aside class="navBar-links">
-        <section class="navBar-links_heading">
-          <button class="navBar-links_heading--close-btn">
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+            <a
+              href="#"
+              class="navBar-links_heading--logoImg landingPage-navBar--logoImg"
+            >
+              <img
+                src="./assets/images/logo.svg"
+                alt="Grilli-Logo"
+                width="160"
+                height="50"
+              />
+            </a>
+          </section>
 
-          <a href="#" class="navBar-links_heading--logoImg landingPage-navBar--logoImg">
-            <img src="./assets/images/logo.svg" alt="Grilli-Logo" width="160" height="50" />
-          </a>
-        </section>
+          <ul class="navbar-link-item--ul">
+            <li class="navbar-link-item--active navbar-link-item">
+              <a href="#" class="hover-underline"> Home </a>
+            </li>
 
-        <ul class="navbar-link-item--ul">
-          <li class="navbar-link-item--active navbar-link-item">
-            <a href="#" class="hover-underline"> Home </a>
-          </li>
+            <li class="navbar-link-item">
+              <a href="#" class="hover-underline"> Menus </a>
+            </li>
 
-          <li class="navbar-link-item">
-            <a href="#" class="hover-underline"> Menus </a>
-          </li>
+            <li class="navbar-link-item">
+              <a href="#" class="hover-underline"> About Us </a>
+            </li>
 
-          <li class="navbar-link-item">
-            <a href="#" class="hover-underline"> About Us </a>
-          </li>
+            <li class="navbar-link-item">
+              <a href="#" class="hover-underline"> Our Chefs </a>
+            </li>
 
-          <li class="navbar-link-item">
-            <a href="#" class="hover-underline"> Our Chefs </a>
-          </li>
+            <li class="navbar-link-item">
+              <a href="#" class="hover-underline"> Contact </a>
+            </li>
+          </ul>
 
-          <li class="navbar-link-item">
-            <a href="#" class="hover-underline"> Contact </a>
-          </li>
-        </ul>
+          <section class="navBar-links_footing">
+            <div class="navBar-links_footing_heading">Visit Us</div>
 
-        <section class="navBar-links_footing">
-          <div class="navBar-links_footing_heading">Visit Us</div>
+            <div class="navBar-links_footing_texts">
+              <p class="navBar-links_footing_address">
+                Restaurant St, Delicious City, <br />
+                London 9578, UK
+              </p>
 
-          <div class="navBar-links_footing_texts">
-            <p class="navBar-links_footing_address">
-              Restaurant St, Delicious City, <br />
-              London 9578, UK
+              <p class="navBar-links_footing_time">Open: 9:00 am to 5:00 pm</p>
+
+              <a href="mailto:booking@grilli.com">
+                <p class="navBar-links_footing_email">booking@grilli.com</p>
+              </a>
+            </div>
+
+            <div class="navBar-links_footing_square"></div>
+
+            <div class="navBar-links_footing_booking">
+              <h1
+                class="navBar-links_footing_booking--text about-us-texts-bookings_heading"
+              >
+                Book Request
+              </h1>
+
+              <h1
+                class="navBar-links_footing_booking--phone about-us-texts-bookings_phone"
+              >
+                <a href="tel: +804007452859" class="hover-underline">
+                  +80-400-745-2859
+                </a>
+              </h1>
+            </div>
+          </section>
+        </aside>
+
+        <!-- LANDING PAGE desktop TOP BAR -->
+        <section class="landingPage-topBar">
+          <!-- --------------------TOP BAR TIME AND ADDRESS---------- -->
+          <div class="landingPage-topBar--addressTime">
+            <p class="addressTime_address topbar-icons-texts">
+              <span class="addressTime_address--icon">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              </span>
+
+              <span class="addressTime_address--texts"
+                >Restaurant St, Delicious City, London 9578, UK</span
+              >
             </p>
 
-            <p class="navBar-links_footing_time">Open: 9:00 am to 5:00 pm</p>
+            <div class="navBar-links_footing_square navbar-link-square"></div>
 
-            <a href="mailto:booking@grilli.com">
-              <p class="navBar-links_footing_email">booking@grilli.com</p>
+            <p class="addressTime_time topbar-icons-texts">
+              <span class="addressTime_time--icon">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+              </span>
+
+              <span class="addressTime_time--texts"
+                >Daily: 8:00 am to 10:00 pm</span
+              >
+            </p>
+          </div>
+
+          <!-- --------------------TOP BAR PHONE AND EMAIL------------->
+          <div class="landingPage-topBar--phoneMail">
+            <a href="tel: +11234567890">
+              <p class="addressTime_phone topbar-icons-texts">
+                <span class="addressTime_address--icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </span>
+
+                <span class="addressTime_address--texts">
+                  +1 123 456 7890
+                </span>
+              </p>
+            </a>
+
+            <div class="navBar-links_footing_square navbar-link-square"></div>
+
+            <a href="mailto:booking@resturant.com">
+              <p class="addressTime_email topbar-icons-texts">
+                <span class="addressTime_time--icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </span>
+
+                <span class="addressTime_time--texts">
+                  booking@resturant.com
+                </span>
+              </p>
             </a>
           </div>
+        </section>
 
-          <div class="navBar-links_footing_square"></div>
+        <!-- DESKTOP ARROW HEADS -->
+        <section class="landingPageArrHead">
+          <div class="desktopArrHead-1 desktopArrHead">
+            <span> < </span>
+          </div>
 
-          <div class="navBar-links_footing_booking">
-            <h1 class="navBar-links_footing_booking--text about-us-texts-bookings_heading">
-              Book Request
-            </h1>
-
-            <h1 class="navBar-links_footing_booking--phone about-us-texts-bookings_phone">
-              <a href="tel: +804007452859" class="hover-underline">
-                +80-400-745-2859
-              </a>
-            </h1>
+          <div class="desktopArrHead-2 desktopArrHead">
+            <span> > </span>
           </div>
         </section>
-      </aside>
 
-      <!-- LANDING PAGE desktop TOP BAR -->
-      <section class="landingPage-topBar">
-        <!-- --------------------TOP BAR TIME AND ADDRESS---------- -->
-        <div class="landingPage-topBar--addressTime">
-          <p class="addressTime_address topbar-icons-texts">
-            <span class="addressTime_address--icon">
-              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-            </span>
-
-            <span class="addressTime_address--texts">Restaurant St, Delicious City, London 9578, UK</span>
-          </p>
-
-          <p class="addressTime_time topbar-icons-texts">
-            <span class="addressTime_time--icon">
-              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-            </span>
-
-            <span class="addressTime_time--texts">Daily: 8:00 am to 10:00 pm</span>
-          </p>
-        </div>
-
-        <!-- --------------------TOP BAR PHONE AND EMAIL------------->
-        <div class="landingPage-topBar--phoneMail">
-          <a href="tel: +11234567890">
-            <p class="addressTime_phone topbar-icons-texts">
-              <span class="addressTime_address--icon">
-                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-              </span>
-
-              <span class="addressTime_address--texts">
-                +1 123 456 7890
-              </span>
-            </p>
+        <!-- LANDING PAGE NAV BAR -->
+        <nav class="landingPage-navBar">
+          <a href="#" class="landingPage-navBar--logoImg">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Grilli-Logo"
+              width="160"
+              height="50"
+            />
           </a>
 
-          <a href="mailto:booking@resturant.com">
-            <p class="addressTime_email topbar-icons-texts">
-              <span class="addressTime_time--icon">
-                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-              </span>
+          <!-- navbar ul links -->
+          <ul class="navbar-ul-links">
+            <li class="navbar-ul-links_list navbar-ul-links_list--active">
+              <a href="#" class="hover-underline"> Home </a>
+            </li>
 
-              <span class="addressTime_time--texts">
-                booking@resturant.com
-              </span>
-            </p>
-          </a>
-        </div>
-      </section>
-      <hr class="topbar-hr" />
+            <li class="navbar-ul-links_list">
+              <a href="#" class="hover-underline navbar-ul-links_list--hover">
+                Menus
+              </a>
+            </li>
 
-      <!-- DESKTOP ARROW HEADS -->
-      <section class="landingPageArrHead">
-        <div class="desktopArrHead-1 desktopArrHead">
-          <span>
-            < </span>
-        </div>
+            <li class="navbar-ul-links_list">
+              <a href="#" class="hover-underline navbar-ul-links_list--hover">
+                About Us
+              </a>
+            </li>
 
-        <div class="desktopArrHead-2 desktopArrHead">
-          <span> > </span>
-        </div>
-      </section>
+            <li class="navbar-ul-links_list">
+              <a href="#" class="hover-underline navbar-ul-links_list--hover">
+                Our Chefs
+              </a>
+            </li>
 
-      <!-- LANDING PAGE NAV BAR -->
-      <nav class="landingPage-navBar">
-        <a href="#" class="landingPage-navBar--logoImg">
-          <img src="./assets/images/logo.svg" alt="Grilli-Logo" width="160" height="50" />
-        </a>
+            <li class="navbar-ul-links_list">
+              <a href="#" class="hover-underline navbar-ul-links_list--hover">
+                Contact
+              </a>
+            </li>
+          </ul>
 
-        <!-- FIND TABLE AND OPEN MENU BAR-->
-        <div class="landingPage-navBar--menuBar">
-          <!-- FIND TABLE BUTTON -->
-          <a href="#">
-            <button class="landingPage-navBar--menuBar_findTableBtn btnAnim">
-              Find A Table
+          <!-- FIND TABLE AND OPEN MENU BAR-->
+          <div class="landingPage-navBar--menuBar">
+            <!-- FIND TABLE BUTTON -->
+            <a href="#">
+              <button class="landingPage-navBar--menuBar_findTableBtn btnAnim">
+                Find A Table
+              </button>
+            </a>
+
+            <!-- OPEN MENU BAR -->
+            <button class="landingPage-navBar--menuBar_openMenu">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+              <div class="line line-3"></div>
             </button>
-          </a>
+          </div>
+        </nav>
 
-          <!-- OPEN MENU BAR -->
-          <button class="landingPage-navBar--menuBar_openMenu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-          </button>
-        </div>
-      </nav>
+        <a href="#">
+          <section class="hero-page-rotatingSquare">
+            <div class="hero-page-rotatingSquare--section">
+              <figure class="hero-page-rotatingSquare--sect_img">
+                <img
+                  src="./assets/images/hero-icon.png"
+                  alt="hero-logo"
+                  height="48"
+                  width="48"
+                />
+              </figure>
 
-      <a href="#">
-      <section class="hero-page-rotatingSquare">
-        <div class="hero-page-rotatingSquare--section">
-          <figure class="hero-page-rotatingSquare--sect_img">
-            <img src="./assets/images/hero-icon.png" alt="hero-logo" height="48" width="48" />
-          </figure>
+              <h1 class="hero-page-rotatingSquare--sect_text">
+                BOOK A <br />TABLE
+              </h1>
+            </div>
+          </section>
+        </a>
+      </article>
+    </header>
 
-          <h1 class="hero-page-rotatingSquare--sect_text">
-            BOOK A <br />TABLE
-          </h1>
-        </div>
-      </section>
-    </a>
-      
-    </article>
-  </header>
-
-  <!-- WHAT WE OFFER (OUR SERVICE) -->
-  <main class="main">
-    <!--     
+    <!-- WHAT WE OFFER (OUR SERVICE) -->
+    <main class="main">
+      <!--     
 <a href="#top" id="top" class="fixed-arrow-btn hideFixed">
   <ion-icon name="chevron-up-outline"></ion-icon> 
 </a> -->
 
-    <article class="service">
-      <section class="service-subTexts">
-        <h1 class="service-subTexts-heading heroTexts--heading">
-          flavours for royalty
-        </h1>
+      <article class="service">
+        <section class="service-subTexts">
+          <h1 class="service-subTexts-heading heroTexts--heading">
+            flavours for royalty
+          </h1>
 
-        <h2 class="service-subTexts-subHeading heroTexts--cursiveTexts">
-          We offer top notch
-        </h2>
+          <h2 class="service-subTexts-subHeading heroTexts--cursiveTexts">
+            We offer top notch
+          </h2>
 
-        <p class="service-subTexts-texts service-subTexts-textsW">
-          Discover a symphony of flavours crafted from premium ingredients
-          sourced both locally and globally. Join us for an unforgettable
-          culinary journey where every detail is meticulously curated to
-          ensure top-notch satisfaction!
-        </p>
-      </section>
+          <p class="service-subTexts-texts service-subTexts-textsW">
+            Discover a symphony of flavours crafted from premium ingredients
+            sourced both locally and globally. Join us for an unforgettable
+            culinary journey where every detail is meticulously curated to
+            ensure top-notch satisfaction!
+          </p>
+        </section>
 
-      <section class="service--container">
-        <div class="service--container_card-1 service--container_card">
-          <a href="#">
-            <figure class="service--container_card_img service--container_card_img1">
-              <img src="./assets/images/service-1.jpg" alt="Pancake Breakfast" height="285" width="336"
-                loading="lazy" />
-            </figure>
-          </a>
-
-          <div class="service--container_card_text">
-            <a href="#" class="service--container_card_textA"> Breakfast </a>
-
-            <a href="#" class="service--container_card_textB hover-underline">
-              <div class="service-viewMenu">VIEW MENU</div>
+        <section class="service--container">
+          <div class="service--container_card-1 service--container_card">
+            <a href="#">
+              <figure
+                class="service--container_card_img service--container_card_img1"
+              >
+                <img
+                  src="./assets/images/service-1.jpg"
+                  alt="Pancake Breakfast"
+                  height="285"
+                  width="336"
+                  loading="lazy"
+                />
+              </figure>
             </a>
-          </div>
-        </div>
 
-        <div class="service--container_card-2 service--container_card">
-          <a href="#">
+            <div class="service--container_card_text">
+              <a href="#" class="service--container_card_textA"> Breakfast </a>
+
+              <a href="#" class="service--container_card_textB hover-underline">
+                <div class="service-viewMenu">VIEW MENU</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="service--container_card-2 service--container_card">
+            <a href="#">
+              <figure class="service--container_card_img">
+                <img
+                  src="./assets/images/service-2.jpg"
+                  alt="Appetizers"
+                  height="285"
+                  width="336"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+
+            <div class="service--container_card_text">
+              <a href="#" class="service--container_card_textA"> Appetizers </a>
+
+              <a href="#" class="service--container_card_textB hover-underline">
+                <div class="service-viewMenu">VIEW MENU</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="service--container_card-3 service--container_card">
             <figure class="service--container_card_img">
-              <img src="./assets/images/service-2.jpg" alt="Appetizers" height="285" width="336" loading="lazy" />
+              <img
+                src="./assets/images/service-3.jpg"
+                alt="Drinks"
+                height="285"
+                width="336"
+                loading="lazy"
+              />
             </figure>
-          </a>
 
-          <div class="service--container_card_text">
-            <a href="#" class="service--container_card_textA"> Appetizers </a>
+            <div class="service--container_card_text">
+              <a href="#" class="service--container_card_textA"> Drinks </a>
 
-            <a href="#" class="service--container_card_textB hover-underline">
-              <div class="service-viewMenu">VIEW MENU</div>
-            </a>
+              <a href="#" class="service--container_card_textB hover-underline">
+                <div class="service-viewMenu">VIEW MENU</div>
+              </a>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="service--container_card-3 service--container_card">
-          <figure class="service--container_card_img">
-            <img src="./assets/images/service-3.jpg" alt="Drinks" height="285" width="336" loading="lazy" />
+        <section class="service-img-shapes">
+          <figure class="service-img-shapes-img service-img-shapes-img-1">
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1"
+            />
           </figure>
 
-          <div class="service--container_card_text">
-            <a href="#" class="service--container_card_textA"> Drinks </a>
+          <figure class="service-img-shapes-img service-img-shapes-img-2">
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </figure>
+        </section>
+      </article>
 
-            <a href="#" class="service--container_card_textB hover-underline">
-              <div class="service-viewMenu">VIEW MENU</div>
-            </a>
+      <!-- -----------------ABOUT US---------------- -->
+      <article class="about-us">
+        <section class="about-us-texts">
+          <h1 class="about-us-texts-heading heroTexts--heading">our story</h1>
+
+          <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
+            Every Flavour Tells a Story
+          </h2>
+
+          <p class="about-us-texts-texts service-subTexts-texts">
+            Indulge in the richness narratives of our dishes, where every
+            flavour whispers a tale of culinary craftsmanship. From the aromatic
+            spices of distant lands to the comforting familiarity of home-cooked
+            classics, savour the stories woven into each bite.
+          </p>
+
+          <div class="about-us-texts-bookings">
+            <h1 class="about-us-texts-bookings_heading">Book Through Call</h1>
+
+            <h1 class="about-us-texts-bookings_phone">
+              <a href="tel: +804007452859" class="hover-underline">
+                +80 (400) 745 2859
+              </a>
+            </h1>
+
+            <button class="about-us-texts-bookings_btn btnAnim">
+              <a href="#"> read more </a>
+            </button>
           </div>
+        </section>
+
+        <figure class="about-us-imgs">
+          <img
+            src="./assets/images/about-banner.jpg"
+            alt="about banner"
+            height="570"
+            width="570"
+            class="about-us-imgs-1"
+            data-parallax-item
+            data-parallax-speed="1"
+            loading="lazy"
+          />
+
+          <div
+            class="about-us-imgs-2 about-us-imgs_img"
+            data-parallax-item
+            data-parallax-speed="1.75"
+          >
+            <img
+              src="./assets/images/about-abs-image.jpg"
+              alt=""
+              loading="lazy"
+              height="285"
+              width="285"
+            />
+          </div>
+
+          <div class="about-us-imgs-3 about-us-imgs_img">
+            <img
+              src="./assets/images/badge-2.png"
+              alt=""
+              loading="lazy"
+              height="134"
+              width="134"
+            />
+          </div>
+        </figure>
+
+        <div class="about-us-imgs-4 about-us-imgs_img">
+          <img
+            src="./assets/images/shape-3.png"
+            alt=""
+            height="134"
+            width="134"
+          />
         </div>
-      </section>
+      </article>
 
-      <section class="service-img-shapes">
-        <figure class="service-img-shapes-img service-img-shapes-img-1">
-          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
-            class="shape shape-1" />
+      <!--------------------- SPECIAL DISH------------------------->
+      <article class="special-dish">
+        <figure class="special-dish_img">
+          <img
+            src="./assets/images/special-dish-banner.jpg"
+            alt="Special Dish"
+            loading="lazy"
+            height="300"
+            width="500"
+          />
         </figure>
 
-        <figure class="service-img-shapes-img service-img-shapes-img-2">
-          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
-            class="shape shape-2" />
-        </figure>
-      </section>
-    </article>
+        <section class="special-dish_texts">
+          <div class="special-dish_texts--badgeHeading">
+            <figure class="special-dish_texts--badge">
+              <img
+                src="./assets/images/badge-1.png"
+                alt="special dish badge"
+                width="28"
+                height="47"
+              />
+            </figure>
 
-    <!-- -----------------ABOUT US---------------- -->
-    <article class="about-us">
-      <section class="about-us-texts">
-        <h1 class="about-us-texts-heading heroTexts--heading">our story</h1>
+            <h1 class="special-dish_texts--heading heroTexts--heading">
+              special dish
+            </h1>
+          </div>
 
-        <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
-          Every Flavour Tells a Story
+          <div class="special-dish_texts--texts">
+            <h2
+              class="special-dish_subTexts-subHeading heroTexts--cursiveTexts"
+            >
+              Lobster Tortellini
+            </h2>
+
+            <p class="service-subTexts-texts service-subTexts-textsW">
+              Treat yourself to our tasty lobster tortellini, a dish that brings
+              the flavors of the sea to your table. Each bite is a journey of
+              savory delight, as the tender lobster meat blends perfectly with
+              our creamy sauce.
+              <!-- Enjoy the rich taste of luxury in every mouthful, as the sauce enhances the natural sweetness of the lobster, creating a culinary experience you won't soon forget. -->
+            </p>
+          </div>
+
+          <div class="special-dish_texts_price">
+            <ul class="special-dish_texts_price--price">
+              <li class="line-thru_text">$45.00</li>
+              <li>$30.00</li>
+            </ul>
+
+            <button
+              class="special-dish_texts_price--btn about-us-texts-bookings_btn btnAnim"
+            >
+              <a href="#"> view all menu </a>
+            </button>
+          </div>
+        </section>
+      </article>
+
+      <!-------------------------MENU----------------------------->
+
+      <article class="menus">
+        <section class="menus-headings">
+          <h1 class="menus-headings_heading heroTexts--heading">
+            special selection
+          </h1>
+
+          <h2 class="menus--headings_subheading heroTexts--cursiveTexts">
+            delicious menu
+          </h2>
+        </section>
+
+        <ul class="menus-container">
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img">
+              <img
+                src="./assets/images/menu-1.png"
+                alt="Greek Salad"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Greek Salad </a>
+                </h3>
+
+                <div class="menus-container_item--texts__headingBtn">
+                  seasonal
+                </div>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $30.50
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Cucumbers, Tomatoes, Red onions, Kalamata olives, Feta cheese,
+                Red wine vinegar, Bell pepper, and Oregano.
+              </section>
+            </div>
+          </li>
+
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img yy">
+              <img
+                src="./assets/images/menu-2.png"
+                alt="Lasagne"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Lasagne </a>
+                </h3>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $43.00
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Ground Beef, Tomatoes, Basil, Oregano, Parmesan cheese,
+                Mozzarella cheese, Ricotta cheese, Egg, Garlic, Pepper, and
+                Olive oil.
+              </section>
+            </div>
+          </li>
+
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img">
+              <img
+                src="./assets/images/menu-3.png"
+                alt="Butternut Pumpkin"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Butternut Pumpkin </a>
+                </h3>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $15.00
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Olive oil, Melted butter, Pepper, Honey, Paprika,
+                Pecans-optional, Parsley, Herbs-optional (rosemary, thyme, and
+                sage), and Balsamic vinegar.
+              </section>
+            </div>
+          </li>
+
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img">
+              <img
+                src="./assets/images/menu-4.png"
+                alt="Tokusen Wagyu"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Tokusen Wagyu </a>
+                </h3>
+
+                <div class="menus-container_item--texts__headingBtn">New</div>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $45.50
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Wagyu beef, Pepper, Olive oil, Garlic, Daikon radish, Shiso
+                leaves, Scallions, and Chimichurri.
+              </section>
+            </div>
+          </li>
+
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img">
+              <img
+                src="./assets/images/menu-5.png"
+                alt=" Olivas Rellenas"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Olivas Rellenas </a>
+                </h3>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $29.00
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Green olives, Anchovy fillets, Garlic, Red Peppers, Parsley,
+                Capers, Lemon zest, and Chili flakes.
+              </section>
+            </div>
+          </li>
+
+          <li class="menus-container_item">
+            <figure class="menus-container_item--img">
+              <img
+                src="./assets/images/menu-6.png"
+                alt=" Opu Fish"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="menus-container_item--img-img"
+              />
+            </figure>
+
+            <div class="menus-container_item--texts">
+              <section class="menus-container_item--texts__heading">
+                <h3 class="menus-container_item--texts__heading-heading">
+                  <a href="#"> Opu Fish </a>
+                </h3>
+
+                <span class="menus-container_item--texts_border"></span>
+
+                <div class="menus-container_item--texts__heading-price">
+                  $50.00
+                </div>
+              </section>
+
+              <section class="menus-container_item--texts__texts">
+                Vegetables, Olivas oil, Steamed Opu fish, Herbs, Fleur de sel,
+                Seasoning, and Spices.
+              </section>
+            </div>
+          </li>
+        </ul>
+
+        <section class="menus-btn">
+          <p class="menus-btn--texts">
+            During winter daily from <span>7:00 pm</span> to
+            <span>9:00 pm</span>.
+          </p>
+
+          <button class="menus-btn--btn about-us-texts-bookings_btn btnAnim">
+            <a href="#"> view all menu </a>
+          </button>
+        </section>
+
+        <section class="menus-img-shapes service-img-shapes">
+          <figure class="menus-img-shapes-img menus-img-shapes-img-1">
+            <img
+              src="./assets/images/shape-5.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+            />
+          </figure>
+
+          <figure class="menus-img-shapes-img menus-img-shapes-img-2">
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+            />
+          </figure>
+        </section>
+      </article>
+
+      <!-------------------TESTIMONIAL------------------------->
+      <article class="testimonial">
+        <h2 class="testimonial-quote">
+          <span>&rdquo;</span>I want to thank my girlfriend for inviting me down
+          for that amazing dinner the other night. The food was extraordinary!
         </h2>
 
-        <p class="about-us-texts-texts service-subTexts-texts">
-          Indulge in the richness narratives of our dishes, where every
-          flavour whispers a tale of culinary craftsmanship. From the aromatic
-          spices of distant lands to the comforting familiarity of home-cooked
-          classics, savour the stories woven into each bite.
-        </p>
+        <div class="testimonial-squares">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <div class="about-us-texts-bookings">
-          <h1 class="about-us-texts-bookings_heading">Book Through Call</h1>
+        <figure class="testimonial-avatar">
+          <img
+            src="./assets/images/testi-avatar.jpg"
+            alt="Fred Miles"
+            width="100"
+            height="100"
+            loading="lazy"
+            class="testimonial-avatar-img"
+          />
 
-          <h1 class="about-us-texts-bookings_phone">
+          <figcaption class="testimonial-avatar__caption">
+            <h3>Fred Miles</h3>
+          </figcaption>
+        </figure>
+      </article>
+
+      <!------------------------RESERVATION----------------------->
+      <article class="reservation">
+        <form class="reservation-form">
+          <section class="reservation-form__heading">
+            <h2
+              class="reservation-form__heading--subheading heroTexts--cursiveTexts"
+            >
+              Online Reservation
+            </h2>
+
+            <p class="menus-btn--texts reservation-heading__subtexts">
+              Booking request
+              <span><a href="tel: +804007452859">+80-400-745-2859</a></span> or
+              fill out the order form.
+            </p>
+          </section>
+
+          <section class="reservation-form__form">
+            <div class="reservation-form__form--nameTel">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="off"
+                class="input-field"
+                required
+              />
+
+              <input
+                type="tel"
+                name="telephone"
+                autocomplete="off"
+                class="input-field"
+                placeholder="Phone Number"
+                required
+                inputmode="numeric"
+              />
+            </div>
+
+            <div class="reservation__form--options">
+              <section
+                class="reservation-form__form--options reservation-form__form--optionsA"
+              >
+                <ion-icon name="person-outline" class="left-icon"></ion-icon>
+                <select name="person" class="input-field drop-down" requiredMa>
+                  <option value="1-Person">1 Person</option>
+                  <option value="2-Person">2 Person</option>
+                  <option value="3-Person">3 Person</option>
+                  <option value="4-Person">4 Person</option>
+                  <option value="5-Person">5 Person</option>
+                  <option value="6-Person">6 Person</option>
+                  <option value="7-Person">7 Person</option>
+                </select>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="right-icon"
+                ></ion-icon>
+              </section>
+
+              <input class="input-field" id="reservation-date" type="date" />
+              <!-- use js to manipulate to current date -->
+
+              <section
+                class="reservation-form__form--options reservation-form__form--optionsB"
+              >
+                <ion-icon name="time-outline" class="left-icon"></ion-icon>
+                <select name="hour" class="input-field" required>
+                  <option value="08:00am">08 : 00 am</option>
+                  <option value="09:00am">09 : 00 am</option>
+                  <option value="10:00am">10 : 00 am</option>
+                  <option value="11:00am">11 : 00 am</option>
+                  <option value="12:00am">12 : 00 am</option>
+                  <option value="01:00pm">01 : 00 pm</option>
+                  <option value="02:00pm">02 : 00 pm</option>
+                  <option value="03:00pm">03 : 00 pm</option>
+                  <option value="04:00pm">04 : 00 pm</option>
+                  <option value="05:00pm">05 : 00 pm</option>
+                  <option value="06:00pm">06 : 00 pm</option>
+                  <option value="07:00pm">07 : 00 pm</option>
+                  <option value="08:00pm">08 : 00 pm</option>
+                  <option value="09:00pm">09 : 00 pm</option>
+                  <option value="10:00pm">10 : 00 pm</option>
+                </select>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="right-icon"
+                ></ion-icon>
+              </section>
+            </div>
+
+            <div class="reservation-form__form--textarea">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="7"
+                placeholder="Message"
+                class="input-field textArea"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="reservation-form__form--btn btnAnim">
+              <h1>Book A Table</h1>
+            </button>
+          </section>
+        </form>
+
+        <section class="reservation-form__contact">
+          <h2
+            class="reservation-form__contact--heading heroTexts--cursiveTexts"
+          >
+            Contact Us
+          </h2>
+
+          <h3 class="reservation-form__contact--subheading">Booking Request</h3>
+
+          <h1
+            class="reservation-form__contact--phone about-us-texts-bookings_phone"
+          >
             <a href="tel: +804007452859" class="hover-underline">
               +80 (400) 745 2859
             </a>
           </h1>
 
-          <button class="about-us-texts-bookings_btn btnAnim">
-            <a href="#"> read more </a>
-          </button>
-        </div>
-      </section>
-
-      <figure class="about-us-imgs">
-        <img src="./assets/images/about-banner.jpg" alt="about banner" height="570" width="570" class="about-us-imgs-1"
-          data-parallax-item data-parallax-speed="1" loading="lazy" />
-
-        <div class="about-us-imgs-2 about-us-imgs_img" data-parallax-item data-parallax-speed="1.75">
-          <img src="./assets/images/about-abs-image.jpg" alt="" loading="lazy" height="285" width="285" />
-        </div>
-
-        <div class="about-us-imgs-3 about-us-imgs_img">
-          <img src="./assets/images/badge-2.png" alt="" loading="lazy" height="134" width="134" />
-        </div>
-      </figure>
-
-      <div class="about-us-imgs-4 about-us-imgs_img">
-        <img src="./assets/images/shape-3.png" alt="" height="134" width="134" />
-      </div>
-    </article>
-
-    <!--------------------- SPECIAL DISH------------------------->
-    <article class="special-dish">
-      <figure class="special-dish_img">
-        <img src="./assets/images/special-dish-banner.jpg" alt="Special Dish" loading="lazy" height="300" width="500" />
-      </figure>
-
-      <section class="special-dish_texts">
-        <div class="special-dish_texts--badgeHeading">
-          <figure class="special-dish_texts--badge">
-            <img src="./assets/images/badge-1.png" alt="special dish badge" width="28" height="47" />
-          </figure>
-
-          <h1 class="special-dish_texts--heading heroTexts--heading">
-            special dish
-          </h1>
-        </div>
-
-        <div class="special-dish_texts--texts">
-          <h2 class="special-dish_subTexts-subHeading heroTexts--cursiveTexts">
-            Lobster Tortellini
-          </h2>
-
-          <p class="service-subTexts-texts service-subTexts-textsW">
-            Treat yourself to our tasty lobster tortellini, a dish that brings
-            the flavors of the sea to your table. Each bite is a journey of
-            savory delight, as the tender lobster meat blends perfectly with
-            our creamy sauce.
-            <!-- Enjoy the rich taste of luxury in every mouthful, as the sauce enhances the natural sweetness of the lobster, creating a culinary experience you won't soon forget. -->
-          </p>
-        </div>
-
-        <div class="special-dish_texts_price">
-          <ul class="special-dish_texts_price--price">
-            <li class="line-thru_text">$45.00</li>
-            <li>$30.00</li>
-          </ul>
-
-          <button class="special-dish_texts_price--btn about-us-texts-bookings_btn btnAnim">
-            <a href="#"> view all menu </a>
-          </button>
-        </div>
-      </section>
-
-    </article>
-
-    
-
-      <!-------------------------MENU----------------------------->
-
-    <article class="menus">
-      <section class="menus-headings">
-        <h1 class="menus-headings_heading heroTexts--heading">
-          special selection
-        </h1>
-
-        <h2 class="menus--headings_subheading heroTexts--cursiveTexts">
-          delicious menu
-        </h2>
-      </section>
-
-      <ul class="menus-container">
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img">
-            <img src="./assets/images/menu-1.png" alt="Greek Salad" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-            
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Greek Salad </a>
-              </h3>
-
-              <div class="menus-container_item--texts__headingBtn">
-                seasonal
-              </div>
-
-              <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $30.50
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Cucumbers, Tomatoes, Red onions, Kalamata olives, Feta cheese,
-              Red wine vinegar, Bell pepper, and Oregano.
-            </section>
-          </div>
-        </li>
-
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img yy">
-            <img src="./assets/images/menu-2.png" alt="Lasagne" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Lasagne </a>
-              </h3>
-
-              <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $43.00
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Ground Beef, Tomatoes, Basil, Oregano, Parmesan cheese,
-              Mozzarella cheese, Ricotta cheese, Egg, Garlic, Pepper, and
-              Olive oil.
-            </section>
-          </div>
-        </li>
-
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img">
-            <img src="./assets/images/menu-3.png" alt="Butternut Pumpkin" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Butternut Pumpkin </a>
-              </h3>
-
-              <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $15.00
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Olive oil, Melted butter, Pepper, Honey, Paprika,
-              Pecans-optional, Parsley, Herbs-optional (rosemary, thyme, and
-              sage), and Balsamic vinegar.
-            </section>
-          </div>
-        </li>
-
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img">
-            <img src="./assets/images/menu-4.png" alt="Tokusen Wagyu" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-          
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Tokusen Wagyu </a>
-              </h3>
-
-              <div class="menus-container_item--texts__headingBtn">New</div>
-
-            <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $45.50
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Wagyu beef, Pepper, Olive oil, Garlic, Daikon radish, Shiso
-              leaves, Scallions, and Chimichurri.
-            </section>
-          </div>
-        </li>
-
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img">
-            <img src="./assets/images/menu-5.png" alt=" Olivas Rellenas" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Olivas Rellenas </a>
-              </h3>
-
-              <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $29.00
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Green olives, Anchovy fillets, Garlic, Red Peppers, Parsley,
-              Capers, Lemon zest, and Chili flakes.
-            </section>
-          </div>
-        </li>
-
-        <li class="menus-container_item">
-          <figure class="menus-container_item--img">
-            <img src="./assets/images/menu-6.png" alt=" Opu Fish" width="100" height="100" loading="lazy"
-              class="menus-container_item--img-img" />
-          </figure>
-
-          <div class="menus-container_item--texts">
-            <section class="menus-container_item--texts__heading">
-              <h3 class="menus-container_item--texts__heading-heading">
-                <a href="#"> Opu Fish </a>
-              </h3>
-
-              <span class="menus-container_item--texts_border"></span>
-
-              <div class="menus-container_item--texts__heading-price">
-                $50.00
-              </div>
-            </section>
-
-            <section class="menus-container_item--texts__texts">
-              Vegetables, Olivas oil, Steamed Opu fish, Herbs, Fleur de sel,
-              Seasoning, and Spices.
-            </section>
-          </div>
-        </li>
-      </ul>
-
-      <section class="menus-btn">
-        <p class="menus-btn--texts">
-          During winter daily from <span>7:00 pm</span> to
-          <span>9:00 pm</span>.
-        </p>
-
-        <button class="menus-btn--btn about-us-texts-bookings_btn btnAnim">
-          <a href="#"> view all menu </a>
-        </button>
-      </section>
-
-      <section class="menus-img-shapes service-img-shapes">
-        <figure class="menus-img-shapes-img menus-img-shapes-img-1">
-          <img src="./assets/images/shape-5.png" width="246" height="412" loading="lazy" alt="shape" />
-        </figure>
-
-        <figure class="menus-img-shapes-img menus-img-shapes-img-2">
-          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" />
-        </figure>
-      </section>
-    </article>
-
-    <!-------------------TESTIMONIAL------------------------->
-    <article class="testimonial">
-      <h2 class="testimonial-quote">
-        <span>&rdquo;</span>I want to thank my girlfriend for inviting me down
-        for that amazing dinner the other night. The food was extraordinary!
-      </h2>
-
-      <div class="testimonial-squares">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <figure class="testimonial-avatar">
-        <img src="./assets/images/testi-avatar.jpg" alt="Fred Miles" width="100" height="100" loading="lazy"
-          class="testimonial-avatar-img" />
-
-        <figcaption class="testimonial-avatar__caption">
-          <h3>Fred Miles</h3>
-        </figcaption>
-      </figure>
-    </article>
-
-    <!------------------------RESERVATION----------------------->
-    <article class="reservation">
-      <form class="reservation-form">
-        <section class="reservation-form__heading">
-          <h2 class="reservation-form__heading--subheading heroTexts--cursiveTexts">
-            Online Reservation
-          </h2>
-
-          <p class="menus-btn--texts reservation-heading__subtexts">
-            Booking request
-            <span><a href="tel: +804007452859">+80-400-745-2859</a></span> or
-            fill out the order form.
-          </p>
-        </section>
-
-        <section class="reservation-form__form">
-          <div class="reservation-form__form--nameTel">
-            <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required />
-
-            <input type="tel" name="telephone" autocomplete="off" class="input-field" placeholder="Phone Number"
-              required inputmode="numeric" />
-          </div>
-
-          <div class="reservation__form--options">
-            <section class="reservation-form__form--options reservation-form__form--optionsA">
-              <ion-icon name="person-outline" class="left-icon"></ion-icon>
-              <select name="person" class="input-field drop-down" requiredMa>
-                <option value="1-Person">1 Person</option>
-                <option value="2-Person">2 Person</option>
-                <option value="3-Person">3 Person</option>
-                <option value="4-Person">4 Person</option>
-                <option value="5-Person">5 Person</option>
-                <option value="6-Person">6 Person</option>
-                <option value="7-Person">7 Person</option>
-              </select>
-              <ion-icon name="chevron-down-outline" class="right-icon"></ion-icon>
-            </section>
-
-            <input class="input-field" id="reservation-date" type="date" />
-            <!-- use js to manipulate to current date -->
-
-            <section class="reservation-form__form--options reservation-form__form--optionsB">
-              <ion-icon name="time-outline" class="left-icon"></ion-icon>
-              <select name="hour" class="input-field" required>
-                <option value="08:00am">08 : 00 am</option>
-                <option value="09:00am">09 : 00 am</option>
-                <option value="10:00am">10 : 00 am</option>
-                <option value="11:00am">11 : 00 am</option>
-                <option value="12:00am">12 : 00 am</option>
-                <option value="01:00pm">01 : 00 pm</option>
-                <option value="02:00pm">02 : 00 pm</option>
-                <option value="03:00pm">03 : 00 pm</option>
-                <option value="04:00pm">04 : 00 pm</option>
-                <option value="05:00pm">05 : 00 pm</option>
-                <option value="06:00pm">06 : 00 pm</option>
-                <option value="07:00pm">07 : 00 pm</option>
-                <option value="08:00pm">08 : 00 pm</option>
-                <option value="09:00pm">09 : 00 pm</option>
-                <option value="10:00pm">10 : 00 pm</option>
-              </select>
-              <ion-icon name="chevron-down-outline" class="right-icon"></ion-icon>
-            </section>
-          </div>
-
-          <div class="reservation-form__form--textarea">
-            <textarea name="" id="" cols="30" rows="7" placeholder="Message" class="input-field textArea"></textarea>
-          </div>
-
-          <button type="submit" class="reservation-form__form--btn btnAnim">
-            <h1>Book A Table</h1>
-          </button>
-        </section>
-      </form>
-
-      <section class="reservation-form__contact">
-        <h2 class="reservation-form__contact--heading heroTexts--cursiveTexts">
-          Contact Us
-        </h2>
-
-        <h3 class="reservation-form__contact--subheading">Booking Request</h3>
-
-        <h1 class="reservation-form__contact--phone about-us-texts-bookings_phone">
-          <a href="tel: +804007452859" class="hover-underline">
-            +80 (400) 745 2859
-          </a>
-        </h1>
-
-        <div class="navBar-links_footing_square"></div>
-
-        <div class="reservation-form__contact--location">
-          <div class="reservation-form__contact--locationTexts">
-            <h4 class="reservation-form__contact--location--heading">
-              Location
-            </h4>
-            <p class="reservation-form__contact--location--texts">
-              Restaurant St, Delicious City, London 9578, UK
-            </p>
-          </div>
-
-          <div class="reservation-form__contact--locationTexts">
-            <h4 class="reservation-form__contact--location--heading">
-              Lunch Time
-            </h4>
-            <p class="reservation-form__contact--location--texts">
-              Monday to Sunday 11:00am - 2:30pm
-            </p>
-          </div>
-
-          <div class="reservation-form__contact--locationTexts">
-            <h4 class="reservation-form__contact--location--heading">
-              Diner Time
-            </h4>
-            <p class="reservation-form__contact--location--texts">
-              Monday to Sunday 05:00pm - 10:00pm
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <!--------------------OUR STRENGTH------------------ -->
-    <article class="strength" id="strengthContainer">
-      <section class="strength--heading">
-        <h1 class="about-us-texts-heading heroTexts--heading">
-          why chose us
-        </h1>
-
-        <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
-          our strength
-        </h2>
-      </section>
-
-      <section class="strength--container">
-        <div class="strength--container__card">
-          <figure class="strength--container__card-img">
-            <img src="./assets/images/features-icon-1.png" alt="Carrot" width="100" height="80" loading="lazy" />
-          </figure>
-
-          <div class="strength--container__card-texts">
-            <h2 class="strength--container__card-texts_heading">
-              Hygienic Food
-            </h2>
-            <p class="strength--container__card-texts_texts">
-              Elevate your experience with our commitment to hygienic food
-              practices, ensuring freshness and safety in every bite.
-            </p>
-          </div>
-        </div>
-
-        <div class="strength--container__card strength-bg">
-          <figure class="strength--container__card-img">
-            <img src="./assets/images/features-icon-2.png" alt="Carrot" width="100" height="80" loading="lazy" />
-          </figure>
-
-          <div class="strength--container__card-texts">
-            <h2 class="strength--container__card-texts_heading">
-              Fresh Environment
-            </h2>
-            <p class="strength--container__card-texts_texts">
-              Immerse in a fresh setting where quality meets creativity for an
-              unforgettable dining experience.
-            </p>
-          </div>
-        </div>
-
-        <div class="strength--container__card">
-          <figure class="strength--container__card-img">
-            <img src="./assets/images/features-icon-3.png" alt="Carrot" width="100" height="80" loading="lazy" />
-          </figure>
-
-          <div class="strength--container__card-texts">
-            <h2 class="strength--container__card-texts_heading">
-              skilled chef
-            </h2>
-            <p class="strength--container__card-texts_texts">
-              Our team of skilled chefs brings passion and expertise to every
-              dish, crafting culinary delights that exceed expectations.
-            </p>
-          </div>
-        </div>
-
-        <div class="strength--container__card strength-bg grid-wrap">
-          <figure class="strength--container__card-img">
-            <img src="./assets/images/features-icon-4.png" alt="Carrot" width="100" height="80" loading="lazy" />
-          </figure>
-
-          <div class="strength--container__card-texts">
-            <h2 class="strength--container__card-texts_heading">
-              event & party
-            </h2>
-            <p class="strength--container__card-texts_texts">
-              From intimate gatherings to lavish parties, we cater to your
-              event needs with exceptional food and service.
-            </p>
-          </div>
-        </div>
-      </section>
-    </article>
-
-    <!-----------------------UPDATES--------------------------->
-    <article class="updates">
-      <section class="updates-heading">
-        <h1 class="about-us-texts-heading heroTexts--heading">
-          recent updates
-        </h1>
-
-        <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
-          upcoming event
-        </h2>
-      </section>
-
-      <section class="updates-container">
-        <div class="updates-card">
-          <figure class="updates-card_img service--container_card_img">
-            <img src="./assets/images/event-1.jpg" alt="" width="350" height="450" />
-          </figure>
-
-          <div class="updates-card_date">02/07/2024</div>
-
-          <div class="updates-card_texts">
-            <h1 class="updates-card_texts--heading">Food & Flavour</h1>
-            <h3 class="updates-card_texts--texts">
-              Experience flavors so divine, you'll feast with your eyes first
-              at 'Food & Flavour'!
-            </h3>
-          </div>
-        </div>
-
-        <div class="updates-card">
-          <figure class="updates-card_img service--container_card_img">
-            <img src="./assets/images/event-2.jpg" alt="" width="350" height="450" />
-          </figure>
-
-          <div class="updates-card_date">25/08/2024</div>
-
-          <div class="updates-card_texts">
-            <h1 class="updates-card_texts--heading">Fit Feast</h1>
-            <h3 class="updates-card_texts--texts">
-              Embark on a deliciously healthy adventure at 'Fit Feast'—savor
-              every bite, nourish every moment!
-            </h3>
-          </div>
-        </div>
-
-        <div class="updates-card update-grid-wrap">
-          <figure class="updates-card_img service--container_card_img">
-            <img src="./assets/images/event-3.jpg" alt="" width="350" height="450" />
-          </figure>
-
-          <div class="updates-card_date">19/10/2024</div>
-
-          <div class="updates-card_texts">
-            <h1 class="updates-card_texts--heading">Palate Palette</h1>
-            <h3 class="updates-card_texts--texts">
-              Get ready to savor a masterpiece of flavors at our culinary
-              celebration—where every recipe is a stroke of genius!
-            </h3>
-          </div>
-        </div>
-      </section>
-
-      <button class="menus-btn--btn about-us-texts-bookings_btn btnAnim">
-        <a href="#"> view our blog </a>
-      </button>
-    </article>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footerContainer">
-    <ul class="footer__links">
-      <li><a href="#home" class="hover-underline">Menu</a></li>
-      <li><a href="#home" class="hover-underline">Home</a></li>
-      <li><a href="#home" class="hover-underline">About us</a></li>
-      <li><a href="#home" class="hover-underline">Our chefs</a></li>
-      <li><a href="#home" class="hover-underline">Contacts</a></li>
-    </ul>
-
-    <article class="footer__form">
-      <section class="footer__form-texts">
-        <figure class="footer__form-texts--img">
-          <img src="./assets/images/logo.svg" alt="Grilli-Logo" width="160" height="50">
-        </figure>
-
-        <div class="footer__form-texts--texts">
-          <p class="navBar-links_footing_address">
-            Restaurant St, Delicious City,
-            London 9578, UK
-          </p>
-
-
-          <p class="navBar-links_footing_email">
-            <a href="mailto:booking@grilli.com" class="hover__color-change">booking@grilli.com</a>
-          </p>
-
-          <p class="hover__color-change">
-            Booking Request : <a href="tel: +804007452859">
-              +80 (400) 745 2859
-            </a>
-          </p>
-
-          <p class="navBar-links_footing_time">
-            Open: 9:00 am to 5:00 pm </p>
-
-          <div class="testimonial-squares">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-
-        <form class="footer__form-texts--form">
-
-          <div class="footer__form-texts--form-heading">
-            <h2 class="reservation-form__contact--heading heroTexts--cursiveTexts">
-              Get News & Offers
-            </h2>
-            <p class="footer__form-texts--form-subTexts">
-              <span>Subscribe us & Get</span> 25% Off.
-            </p>
-          </div>
-
-          <div class="footer__form-texts--form-btnEmail">
-            <div class="footer__form-texts--form-email">
-              <ion-icon name="mail-outline" class="left-icon footer-icon"></ion-icon>
-              <input type="email" name="email" id="email" class="input-field" placeholder="Your email" required
-                autocomplete="off">
+          <div class="navBar-links_footing_square"></div>
+
+          <div class="reservation-form__contact--location">
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Location
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Restaurant St, Delicious City, London 9578, UK
+              </p>
             </div>
 
-            <button type="submit" class="reservation-form__form--btn btnAnim">
-              <h4>Subscribe</h4>
-              <!-- prevent default -->
-            </button>
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Lunch Time
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Monday to Sunday 11:00am - 2:30pm
+              </p>
+            </div>
+
+            <div class="reservation-form__contact--locationTexts">
+              <h4 class="reservation-form__contact--location--heading">
+                Diner Time
+              </h4>
+              <p class="reservation-form__contact--location--texts">
+                Monday to Sunday 05:00pm - 10:00pm
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!--------------------OUR STRENGTH------------------ -->
+      <article class="strength" id="strengthContainer">
+        <section class="strength--heading">
+          <h1 class="about-us-texts-heading heroTexts--heading">
+            why chose us
+          </h1>
+
+          <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
+            our strength
+          </h2>
+        </section>
+
+        <section class="strength--container">
+          <div class="strength--container__card">
+            <figure class="strength--container__card-img">
+              <img
+                src="./assets/images/features-icon-1.png"
+                alt="Carrot"
+                width="100"
+                height="80"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="strength--container__card-texts">
+              <h2 class="strength--container__card-texts_heading">
+                Hygienic Food
+              </h2>
+              <p class="strength--container__card-texts_texts">
+                Elevate your experience with our commitment to hygienic food
+                practices, ensuring freshness and safety in every bite.
+              </p>
+            </div>
           </div>
 
-        </form>
+          <div class="strength--container__card strength-bg">
+            <figure class="strength--container__card-img">
+              <img
+                src="./assets/images/features-icon-2.png"
+                alt="Carrot"
+                width="100"
+                height="80"
+                loading="lazy"
+              />
+            </figure>
 
-      </section>
-    </article>
+            <div class="strength--container__card-texts">
+              <h2 class="strength--container__card-texts_heading">
+                Fresh Environment
+              </h2>
+              <p class="strength--container__card-texts_texts">
+                Immerse in a fresh setting where quality meets creativity for an
+                unforgettable dining experience.
+              </p>
+            </div>
+          </div>
 
-    <ul class="footer__hot-links">
-      <li><a href="https://www.facebook.com"class="hover-underline" target="_blank">Facebook</a></li>
-      <li><a href="https://www.instagram.com" class="hover-underline" target="_blank">instagram</a></li>
-      <li><a href="https://www.twitter.com" class="hover-underline" target="_blank">Twitter</a></li>
-      <li><a href="https://www.youtube.com" class="hover-underline" target="_blank">Youtube</a></li>
-      <li><a href="https://www.google.com/maps" class="hover-underline" target="_blank">Google Maps</a></li>
-    </ul>
-    
+          <div class="strength--container__card">
+            <figure class="strength--container__card-img">
+              <img
+                src="./assets/images/features-icon-3.png"
+                alt="Carrot"
+                width="100"
+                height="80"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="strength--container__card-texts">
+              <h2 class="strength--container__card-texts_heading">
+                skilled chef
+              </h2>
+              <p class="strength--container__card-texts_texts">
+                Our team of skilled chefs brings passion and expertise to every
+                dish, crafting culinary delights that exceed expectations.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength--container__card strength-bg grid-wrap">
+            <figure class="strength--container__card-img">
+              <img
+                src="./assets/images/features-icon-4.png"
+                alt="Carrot"
+                width="100"
+                height="80"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="strength--container__card-texts">
+              <h2 class="strength--container__card-texts_heading">
+                event & party
+              </h2>
+              <p class="strength--container__card-texts_texts">
+                From intimate gatherings to lavish parties, we cater to your
+                event needs with exceptional food and service.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-----------------------UPDATES--------------------------->
+      <article class="updates">
+        <section class="updates-heading">
+          <h1 class="about-us-texts-heading heroTexts--heading">
+            recent updates
+          </h1>
+
+          <h2 class="about-us-texts-subHeading heroTexts--cursiveTexts">
+            upcoming event
+          </h2>
+        </section>
+
+        <section class="updates-container">
+          <div class="updates-card">
+            <figure class="updates-card_img service--container_card_img">
+              <img
+                src="./assets/images/event-1.jpg"
+                alt=""
+                width="350"
+                height="450"
+              />
+            </figure>
+
+            <div class="updates-card_date">02/07/2024</div>
+
+            <div class="updates-card_texts">
+              <h1 class="updates-card_texts--heading">Food & Flavour</h1>
+              <h3 class="updates-card_texts--texts">
+                Experience flavors so divine, you'll feast with your eyes first
+                at 'Food & Flavour'!
+              </h3>
+            </div>
+          </div>
+
+          <div class="updates-card">
+            <figure class="updates-card_img service--container_card_img">
+              <img
+                src="./assets/images/event-2.jpg"
+                alt=""
+                width="350"
+                height="450"
+              />
+            </figure>
+
+            <div class="updates-card_date">25/08/2024</div>
+
+            <div class="updates-card_texts">
+              <h1 class="updates-card_texts--heading">Fit Feast</h1>
+              <h3 class="updates-card_texts--texts">
+                Embark on a deliciously healthy adventure at 'Fit Feast'—savor
+                every bite, nourish every moment!
+              </h3>
+            </div>
+          </div>
+
+          <div class="updates-card update-grid-wrap">
+            <figure class="updates-card_img service--container_card_img">
+              <img
+                src="./assets/images/event-3.jpg"
+                alt=""
+                width="350"
+                height="450"
+              />
+            </figure>
+
+            <div class="updates-card_date">19/10/2024</div>
+
+            <div class="updates-card_texts">
+              <h1 class="updates-card_texts--heading">Palate Palette</h1>
+              <h3 class="updates-card_texts--texts">
+                Get ready to savor a masterpiece of flavors at our culinary
+                celebration—where every recipe is a stroke of genius!
+              </h3>
+            </div>
+          </div>
+        </section>
+
+        <button class="menus-btn--btn about-us-texts-bookings_btn btnAnim">
+          <a href="#"> view our blog </a>
+        </button>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footerContainer">
+        <ul class="footer__links">
+          <li><a href="#home" class="hover-underline">Menu</a></li>
+          <li><a href="#home" class="hover-underline">Home</a></li>
+          <li><a href="#home" class="hover-underline">About us</a></li>
+          <li><a href="#home" class="hover-underline">Our chefs</a></li>
+          <li><a href="#home" class="hover-underline">Contacts</a></li>
+        </ul>
+
+        <article class="footer__form">
+          <section class="footer__form-texts">
+            <figure class="footer__form-texts--img">
+              <img
+                src="./assets/images/logo.svg"
+                alt="Grilli-Logo"
+                width="160"
+                height="50"
+              />
+            </figure>
+
+            <div class="footer__form-texts--texts">
+              <p class="navBar-links_footing_address">
+                Restaurant St, Delicious City, London 9578, UK
+              </p>
+
+              <p class="navBar-links_footing_email">
+                <a href="mailto:booking@grilli.com" class="hover__color-change"
+                  >booking@grilli.com</a
+                >
+              </p>
+
+              <p class="hover__color-change">
+                Booking Request :
+                <a href="tel: +804007452859"> +80 (400) 745 2859 </a>
+              </p>
+
+              <p class="navBar-links_footing_time">Open: 9:00 am to 5:00 pm</p>
+
+              <div class="testimonial-squares">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <form class="footer__form-texts--form">
+              <div class="footer__form-texts--form-heading">
+                <h2
+                  class="reservation-form__contact--heading heroTexts--cursiveTexts"
+                >
+                  Get News & Offers
+                </h2>
+                <p class="footer__form-texts--form-subTexts">
+                  <span>Subscribe us & Get</span> 25% Off.
+                </p>
+              </div>
+
+              <div class="footer__form-texts--form-btnEmail">
+                <div class="footer__form-texts--form-email">
+                  <ion-icon
+                    name="mail-outline"
+                    class="left-icon footer-icon"
+                  ></ion-icon>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="input-field"
+                    placeholder="Your email"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="reservation-form__form--btn btnAnim"
+                >
+                  <h4>Subscribe</h4>
+                  <!-- prevent default -->
+                </button>
+              </div>
+            </form>
+          </section>
+        </article>
+
+        <ul class="footer__hot-links">
+          <li>
+            <a
+              href="https://www.facebook.com"
+              class="hover-underline"
+              target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              class="hover-underline"
+              target="_blank"
+              >instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com"
+              class="hover-underline"
+              target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com"
+              class="hover-underline"
+              target="_blank"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps"
+              class="hover-underline"
+              target="_blank"
+              >Google Maps</a
+            >
+          </li>
+        </ul>
       </div>
 
+      <p class="credits">
+        © 2024 Grilli. All Rights Reserved ~ Designed by
+        <a href="https://github.com/estheroluwabuyi" target="_blank"
+          >the_code_gal</a
+        >
+      </p>
+    </footer>
 
-  <p class="credits">
-    © 2024 Grilli. All Rights Reserved ~ Designed by
-    <a
-    href="https://github.com/estheroluwabuyi" target="_blank">the_code_gal</a>
-  </p>
-  </footer>
+    <!---------------SCRIPT JS-------------------->
+    <script src="./assets/js/script.js"></script>
 
-  <!---------------SCRIPT JS-------------------->
-  <script src="./assets/js/script.js"></script>
-
-  <!--------------------ION ICON LINKS-------------------->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <!--------------------ION ICON LINKS-------------------->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
-
-<!--       
-            <ion-icon name="person-outline"></ion-icon>
-            <ion-icon name="time-outline"></ion-icon>
-       -->

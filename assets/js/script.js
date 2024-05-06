@@ -26,10 +26,10 @@ const fixedArr = document.querySelector(".fixed-arrow-btn");
 
 const preloader = document.querySelector("[data-preload]");
 
-//PRELOADER
-// window.addEventListener('load', function () {
-//   preloader.classList.add('hide');
-// });
+
+
+
+
 
 // PRELOADER
 window.addEventListener('load', function () {
