@@ -111,20 +111,42 @@ input {
   outline: none;
 }
 
-/* PRELOADER
+.hide{
+opacity: 0;
+}
+
+
+
+/* PRELOADER */
 .preloader{
-  position: absolute;
-  background-color: var(--GOLD);
+  left: 0;
+  right: 0;
+  bottom: 0;
+ top: 0;
+  background: var(--GOLD);
+  /* overflow: hidden; */
+  position: fixed;
+  z-index: 10;
   height: 100vh;
   width: 100%;
+transition: 500ms ease;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
- /* z-index: 1; 
- transition: opacity 1s ease-in-out;
- overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.preloader > *{
+transition: 250ms ease;
+}
+
+.preloader.loaded > *{
+opacity: 0;
+}
+
+.preloader.loaded{
+  transition-delay: 250ms;
+  transform: translateY(100%);
 }
 
 .preloader-circle{
@@ -140,7 +162,7 @@ input {
 .preloader-text{
   font-size: calc(2rem + 3vw);
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from its invisibility
+  -webkit-text-stroke: 0.5px var(--EERIE-BLACK); /*Although the text-color is invisible, this property carves out the texts-from its invisibility */
    letter-spacing: 15px;
    text-transform: uppercase;
   font-family:var(--FF-DM_S) ;
@@ -149,7 +171,7 @@ input {
   -webkit-background-clip: text;
   animation: fadingText 2s ease infinite;
   background-size: 500%; 
-} */
+} 
 
 /* HERO PAGE */
 .landingPage {
@@ -157,9 +179,6 @@ input {
   /* top: -1000px; */
 }
 
-.loaded {
-  animation: landingPage 1s linear forwards;
-}
 
 .heroPage {
   overflow: hidden;
@@ -1488,9 +1507,6 @@ input,
   color: var(--GOLD);
 }
 
-.hidden {
-  display: none;
-}
 
 /* ANIMATIONS */
 /* ROLLING CIRCLE ANIMATION */
@@ -1548,8 +1564,8 @@ input,
 /*LANDING PAGE ANIMATION */
 @keyframes landingPage {
   100% {
-    top: 0;
-    z-index: 1;
+    top: 1000px;
+    /* z-index: 1; */
   }
 }
 

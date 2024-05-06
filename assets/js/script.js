@@ -24,13 +24,19 @@ const arrHead2 = document.querySelector(".desktopArrHead-2");
 
 const fixedArr = document.querySelector(".fixed-arrow-btn");
 
-const preloader = document.querySelector(".preloader");
+const preloader = document.querySelector("[data-preload]");
 
 //PRELOADER
-// window.addEventListener('load', ()=>{
-//     landingPageEl.classList.add('loaded');
-//     // preloader.style.zIndex = -1;
+// window.addEventListener('load', function () {
+//   preloader.classList.add('hide');
 // });
+
+
+window.addEventListener('load', function () {
+  preloader.classList.add('loaded');
+  document.body.classList.add('loaded');
+})
+
 
 // HERO PAGE
 const imgUrls = [
