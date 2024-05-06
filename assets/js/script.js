@@ -31,7 +31,7 @@ const preloader = document.querySelector("[data-preload]");
 //   preloader.classList.add('hide');
 // });
 
-
+// PRELOADER
 window.addEventListener('load', function () {
   preloader.classList.add('loaded');
   document.body.classList.add('loaded');
