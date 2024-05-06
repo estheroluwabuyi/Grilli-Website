@@ -162,6 +162,7 @@ input {
 }
 
 .heroPage {
+  overflow: hidden;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -495,7 +496,7 @@ input {
   position: absolute;
  top: 80vh;
  right: 0;
- margin-inline: 5rem;
+ margin-inline: 3rem;
  /* margin-block-end: 3rem; */
  background-color: var(--GOLD);
  padding: 0.85rem 1rem;
