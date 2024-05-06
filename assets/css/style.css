@@ -490,32 +490,28 @@ input {
   animation-delay: 350ms;
 }
 
-/* HERO PAGE ROTATING SQUARE */
-.hero-page-rotatingSquare {
+/*  HERO PAGE ROTATING SQUARE */
+.hero-page-rotatingSquare{
   position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-inline: 3rem;
-  margin-block-end: 10rem;
+ bottom: 0;
+ right: 0;
+ margin-inline: 5rem;
+ margin-block-end: 3rem;
+ background-color: var(--GOLD);
+ padding: 0.85rem 1rem;
 }
 
-.hero-page-rotatingSquare::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--GOLD);
-  position: absolute;
-  animation: rollingSquare 8s linear infinite;
-}
-
-.hero-page-rotatingSquare--section {
-  background-color: var(--GOLD);
-  padding: 0.75rem 0.95rem;
+.hero-page-rotatingSquare--section{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; 
+}
+
+.hero-page-rotatingSquare--sect_text {
+  color: var(--EERIE-BLACK);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
 }
 
 .hero-page-rotatingSquare--sect_img {
@@ -528,11 +524,17 @@ input {
   height: auto;
 }
 
-.hero-page-rotatingSquare--sect_text {
-  color: var(--EERIE-BLACK);
-  font-size: 0.8rem;
-  letter-spacing: 3px;
+.hero-page-rotatingSquare::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--GOLD);
+  animation: rollingSquare 8s linear infinite;
 }
+
 
 /* MAIN STYLING */
 main {
