@@ -493,10 +493,10 @@ input {
 /*  HERO PAGE ROTATING SQUARE */
 .hero-page-rotatingSquare{
   position: absolute;
- bottom: 0;
+ top: 80vh;
  right: 0;
  margin-inline: 5rem;
- margin-block-end: 3rem;
+ /* margin-block-end: 3rem; */
  background-color: var(--GOLD);
  padding: 0.85rem 1rem;
 }
