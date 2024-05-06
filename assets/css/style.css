@@ -124,7 +124,7 @@ opacity: 0;
   bottom: 0;
  top: 0;
   background: var(--GOLD);
-  /* overflow: hidden; */
+  overflow: hidden;
   position: fixed;
   z-index: 10;
   height: 100vh;
