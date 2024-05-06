@@ -146,7 +146,7 @@ opacity: 0;
 
 .preloader.loaded{
   transition-delay: 250ms;
-  transform: translateY(110%);
+  transform: translateY(100%);
 }
 
 .preloader-circle{
