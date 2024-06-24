@@ -62,7 +62,7 @@ html {
 /* ----custom scroll bar */
 ::-webkit-scrollbar {
   width: 7px;
-}
+}z
 
 ::-webkit-scrollbar-track {
   background: var(--EERIE-BLACK);
@@ -171,7 +171,29 @@ input {
   background-size: 500%;
 }
 
-/* HERO PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HERO PAGE------------------------------------------------------------ */
 .landingPage {
   position: relative;
   /* top: -1000px; */
@@ -184,10 +206,25 @@ input {
   width: 100%;
 }
 
-.heroPage-Img {
-  position: absolute;
+.hero-home-page{
+  position: relative;
+  width: 100%;
   top: 0;
   left: 0;
+}
+
+.hero-home-page-page{
+  position: absolute;
+  width: 100%;
+}
+
+
+
+
+.heroPage-Img {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
   width: 100%;
   height: 100vh;
   transition: animation 300ms ease;
@@ -269,6 +306,41 @@ input {
 .text-anim {
   animation: text 7s linear infinite;
 }
+/* --------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* NAV BAR LINKS */
 /* nav bar links heading */
@@ -1428,6 +1500,7 @@ input,
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .footer__hot-links,

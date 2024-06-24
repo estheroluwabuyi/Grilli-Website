@@ -18,102 +18,79 @@ const navQuickLinksUl = document.querySelector(".navbar-link-item--ul");
 
 const heroHomePage = document.querySelector(".hero-home-page");
 
-const arrHead1 = document.querySelector(".desktopArrHead-1");
+const arrLeft = document.querySelector(".desktopArrHead-1");
 
-const arrHead2 = document.querySelector(".desktopArrHead-2");
+const arrRight = document.querySelector(".desktopArrHead-2");
 
 const fixedArr = document.querySelector(".fixed-arrow-btn");
 
 const preloader = document.querySelector("[data-preload]");
 
+const slides = document.querySelectorAll(".hero-home-page-page");
+
+const slider = document.querySelector(".hero-home-page");
 
 
-
-
-
+/////////////////////////
+/////////////////////////
+////////////////////////
 // PRELOADER
-window.addEventListener('load', function () {
-  preloader.classList.add('loaded');
-  document.body.classList.add('loaded');
-})
+window.addEventListener("load", function () {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
 
 
-// HERO PAGE
+/////////////////////////
+/////////////////////////
+////////////////////////
+// HERO PAGE---will have to come back to this code, there's still a lot to do and refactor (The animations and opacity)
 const imgUrls = [
   "./assets/images/hero-slider-1.jpg",
   "./assets/images/hero-slider-2.jpg",
   "./assets/images/hero-slider-3.jpg",
 ];
 
-function textChanger() {
-  if (imgEl.getAttribute("src") === "./assets/images/hero-slider-1.jpg") {
-    heroHeadText.innerHTML = `Traditional Food & Hygiene`;
-    heroCursiveText.innerHTML = `For the Love of <br>
-                         Delicious Food`;
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-2.jpg"
-  ) {
-    heroHeadText.innerHTML = `Delightful Experience`;
-    heroCursiveText.innerHTML = `Flavours Inspired by </br>
-                                 the Seasons`;
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-3.jpg"
-  ) {
-    heroHeadText.innerHTML = `Amazing & Delicious`;
-    heroCursiveText.innerHTML = `Where Every Flavour </br>
-                           Tells a Story`;
-  }
-}
+//Slider for the Arrow Buttons
+let curSlide = 0;
+const maxSlide = slides.length;
+console.log(maxSlide);
+//GoToSlide Function
+const goToSlide = function (slide) {
+  slides.forEach((s, i) => {
+    s.style.transform = `translateX(${100 * (i - slide)}%)`;
+  });
+};
 
-let currentIndex = 0;
+goToSlide(0);
 
-function changeImg() {
-  imgEl.src = imgUrls[currentIndex];
+//Next Slide
+arrRight.addEventListener("click", function () {
+  curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
 
-  currentIndex = (currentIndex + 1) % imgUrls.length;
-  textChanger();
-
-  setTimeout(changeImg, 7000);
-}
-
-changeImg(); // Initial call to start cycling through images
-
-//ARROW FOR CHANGING IMAGE
-arrHead1.addEventListener("click", () => {
-  if (imgEl.getAttribute("src") === "./assets/images/hero-slider-1.jpg") {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-3.jpg");
-    textChanger();
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-3.jpg"
-  ) {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-2.jpg");
-    textChanger();
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-2.jpg"
-  ) {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-1.jpg");
-    textChanger();
-  }
+  goToSlide(curSlide);
 });
 
-arrHead2.addEventListener("click", () => {
-  if (imgEl.getAttribute("src") === "./assets/images/hero-slider-1.jpg") {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-2.jpg");
-    textChanger();
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-2.jpg"
-  ) {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-3.jpg");
-    textChanger();
-  } else if (
-    imgEl.getAttribute("src") === "./assets/images/hero-slider-3.jpg"
-  ) {
-    imgEl.setAttribute("src", "./assets/images/hero-slider-1.jpg");
-    textChanger();
-  }
+//Prev Slide
+arrLeft.addEventListener("click", function () {
+  curSlide === 0 ? (curSlide = maxSlide - 1) : curSlide--;
+
+  goToSlide(curSlide);
 });
 
-// SLIDING NAV
+ // Automatic Slide
+ const autoSlide = function() {
+  curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
+  goToSlide(curSlide);
+};
+
+setInterval(autoSlide, 3000);
+
+
+/////////////////////////
+/////////////////////////
+////////////////////////
+// NAV BAR
 openBtn.addEventListener("click", function () {
   navQuickLinks.classList.add("slidingNav");
 });
@@ -122,11 +99,15 @@ closeBtn.addEventListener("click", function () {
   navQuickLinks.classList.remove("slidingNav");
 });
 
-// HIDE SLIDING NAV BAR
 heroHomePage.addEventListener("click", () => {
   navQuickLinks.classList.remove("slidingNav");
 });
 
+
+
+/////////////////////////
+/////////////////////////
+////////////////////////
 // FIXED ARROW
 // (function () {
 //   const scrollPosition = 75;
@@ -146,6 +127,11 @@ heroHomePage.addEventListener("click", () => {
 //         }, 3000);
 //        }
 
+
+
+/////////////////////////
+/////////////////////////
+////////////////////////
 //OUR MENUS
 const containerHovers = document.querySelectorAll(".menus-container_item");
 
@@ -218,3 +204,8 @@ strengthHover.forEach((card) => {
 // strengthContainer.addEventListener('mouseout', handleHover);
 // strengthContainer.addEventListener('touchstart', handleHover);
 // strengthContainer.addEventListener('touchend', handleHover);
+
+//this is same as below
+// slides.forEach((s, i) => {
+//   s.style.transform = `translateX(${100 * i}%)`
+// });
