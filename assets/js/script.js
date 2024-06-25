@@ -45,12 +45,6 @@ window.addEventListener("load", function () {
 /////////////////////////
 ////////////////////////
 // HERO PAGE---will have to come back to this code, there's still a lot to do and refactor (The animations and opacity)
-const imgUrls = [
-  "./assets/images/hero-slider-1.jpg",
-  "./assets/images/hero-slider-2.jpg",
-  "./assets/images/hero-slider-3.jpg",
-];
-
 //Slider for the Arrow Buttons
 let curSlide = 0;
 const maxSlide = slides.length;
@@ -84,7 +78,7 @@ arrLeft.addEventListener("click", function () {
   goToSlide(curSlide);
 };
 
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 7000);
 
 
 /////////////////////////
