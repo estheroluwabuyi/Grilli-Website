@@ -203,3 +203,6 @@ strengthHover.forEach((card) => {
 // slides.forEach((s, i) => {
 //   s.style.transform = `translateX(${100 * i}%)`
 // });
+
+
+// Change data-name when the after pseudo class is n focus

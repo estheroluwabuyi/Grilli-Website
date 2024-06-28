@@ -62,9 +62,8 @@ html {
 /* ----custom scroll bar */
 ::-webkit-scrollbar {
   width: 7px;
-}z
-
-::-webkit-scrollbar-track {
+}
+z ::-webkit-scrollbar-track {
   background: var(--EERIE-BLACK);
 }
 
@@ -171,28 +170,6 @@ input {
   background-size: 500%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HERO PAGE------------------------------------------------------------ */
 .landingPage {
   position: relative;
@@ -206,20 +183,17 @@ input {
   width: 100%;
 }
 
-.hero-home-page{
+.hero-home-page {
   position: relative;
   width: 100%;
   top: 0;
   left: 0;
 }
 
-.hero-home-page-page{
+.hero-home-page-page {
   position: absolute;
   width: 100%;
 }
-
-
-
 
 .heroPage-Img {
   /* position: absolute; */
@@ -278,14 +252,48 @@ input {
 }
 
 .btnAnim {
-  padding: var(--RES-PAD);
+  position: relative;
+  width: 20rem;
+  height: 50px;
+  /* padding: var(--RES-PAD); */
+  padding: 1.2rem .7rem;
   text-transform: uppercase;
   font-family: inherit;
   letter-spacing: 2px;
   border: var(--G-BORDER);
   color: var(--GOLD);
   font-size: var(--FS-S);
+  overflow: hidden;
 }
+
+
+.btnAnim::after{
+  position: absolute;
+  content: "See Menu";
+  left: 0;
+  bottom: 10rem;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  color: var(--SM0KY-BLACK-2);
+  background: var(--GOLD);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 600ms ease;
+  font-size: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+}
+
+.btnAnim:is(:hover, :focus-visible)::after{
+  bottom: 0;
+}
+
+/* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
 
 .heroTexts--cursiveTexts {
   font-family: var(--FF-FORUM);
@@ -307,40 +315,6 @@ input {
   animation: text 7s linear infinite;
 }
 /* --------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* NAV BAR LINKS */
 /* nav bar links heading */
