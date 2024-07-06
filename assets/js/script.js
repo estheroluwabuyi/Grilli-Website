@@ -30,6 +30,29 @@ const slides = document.querySelectorAll(".hero-home-page-page");
 
 const slider = document.querySelector(".hero-home-page");
 
+const allBtns = document.querySelectorAll('.btnAnim');
+
+console.log(allBtns);
+
+allBtns.forEach(el => {
+  el.addEventListener('mouseout', function () {
+    el.classList.remove('btnA')
+  });
+
+  el.addEventListener('touchend', function () {
+    el.classList.remove('btnA');
+  });
+
+  el.addEventListener('touchstart', function () {
+    el.classList.remove('btnA')
+  })
+
+  el.addEventListener('mouseover', function () {
+    el.classList.add('btnA')
+  });
+
+  // ["mouseover", "click"].forEach(e => el.addEventListener(e, handleStrengthHover));
+});
 
 /////////////////////////
 /////////////////////////
@@ -48,7 +71,6 @@ window.addEventListener("load", function () {
 //Slider for the Arrow Buttons
 let curSlide = 0;
 const maxSlide = slides.length;
-console.log(maxSlide);
 //GoToSlide Function
 const goToSlide = function (slide) {
   slides.forEach((s, i) => {
@@ -174,10 +196,13 @@ function handleStrengthHover() {
 }
 
 strengthHover.forEach((card) => {
-  card.addEventListener("mouseover", handleStrengthHover);
-  // card.addEventListener("mouseout", handleStrengthHover);
-  card.addEventListener("touchstart", handleStrengthHover);
+  // card.addEventListener("mouseover", handleStrengthHover);
+  // // card.addEventListener("mouseout", handleStrengthHover);
+  // card.addEventListener("touchstart", handleStrengthHover);
   // card.addEventListener("touchend", handleStrengthHover);
+
+  
+  ["mouseover", "touchstart"].forEach(e => card.addEventListener(e, handleStrengthHover));
 });
 
 //EVENT PROPAGATION

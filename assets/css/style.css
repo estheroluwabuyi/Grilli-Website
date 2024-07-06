@@ -288,9 +288,12 @@ input {
 }
 
 .btnAnim:is(:hover, :focus-visible)::after{
-  bottom: 0;
+  /* bottom: 0; */
 }
 
+.btnA::after{
+  bottom: 0;
+}
 /* left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); */
