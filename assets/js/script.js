@@ -35,14 +35,13 @@ const allBtns = document.querySelectorAll('.btnAnim');
 console.log(allBtns);
 
 allBtns.forEach(el => {
-  el.addEventListener('mouseout', function () {
-    el.classList.remove('btnA')
-  });
+  // el.addEventListener('mouseout', function () {
+  //   el.classList.remove('btnA')
+  // });
 
-  el.addEventListener('touchend', function () {
-    el.classList.remove('btnA');
-  });
-
+  // el.addEventListener('touchend', function () {
+  //   el.classList.remove('btnA');
+  // });
   el.addEventListener('touchstart', function () {
     el.classList.add('btnA')
   })

@@ -256,7 +256,7 @@ input {
   width: 20rem;
   height: 50px;
   /* padding: var(--RES-PAD); */
-  padding: 1.2rem .7rem;
+  padding: 1.2rem 0.7rem;
   text-transform: uppercase;
   font-family: inherit;
   letter-spacing: 2px;
@@ -266,8 +266,7 @@ input {
   overflow: hidden;
 }
 
-
-.btnAnim::after{
+.btnAnim::after {
   position: absolute;
   content: "See Menu";
   left: 0;
@@ -287,11 +286,11 @@ input {
   font-family: inherit;
 }
 
-.btnAnim:is(:hover, :focus-visible)::after{
+.btnAnim:is(:hover, :focus-visible)::after {
   /* bottom: 0; */
 }
 
-.btnA::after{
+.btnA::after {
   bottom: 0;
 }
 /* left: 50%;
@@ -344,6 +343,7 @@ input {
 
 .navBar-links_heading--close-btn {
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .navBar-links_heading--close-btn ion-icon {
@@ -578,6 +578,7 @@ input {
 
 /* MENU BAR DESIGN */
 .landingPage-navBar--menuBar_openMenu {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
