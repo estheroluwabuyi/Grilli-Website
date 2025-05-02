@@ -22,6 +22,8 @@ const arrLeft = document.querySelector(".desktopArrHead-1");
 
 const arrRight = document.querySelector(".desktopArrHead-2");
 
+const copyrightYear = document.querySelector(".copyright-year");
+
 const fixedArr = document.querySelector(".fixed-arrow-btn");
 
 const preloader = document.querySelector("[data-preload]");
@@ -30,27 +32,16 @@ const slides = document.querySelectorAll(".hero-home-page-page");
 
 const slider = document.querySelector(".hero-home-page");
 
-const allBtns = document.querySelectorAll('.btnAnim');
+const allBtns = document.querySelectorAll(".btnAnim");
 
-console.log(allBtns);
-
-allBtns.forEach(el => {
-  // el.addEventListener('mouseout', function () {
-  //   el.classList.remove('btnA')
-  // });
-
-  // el.addEventListener('touchend', function () {
-  //   el.classList.remove('btnA');
-  // });
-  el.addEventListener('touchstart', function () {
-    el.classList.add('btnA')
-  })
-
-  el.addEventListener('mouseover', function () {
-    el.classList.add('btnA')
+allBtns.forEach((el) => {
+  el.addEventListener("touchstart", function () {
+    el.classList.add("btnA");
   });
 
-  // ["mouseover", "click"].forEach(e => el.addEventListener(e, handleStrengthHover));
+  el.addEventListener("mouseover", function () {
+    el.classList.add("btnA");
+  });
 });
 
 /////////////////////////
@@ -61,7 +52,6 @@ window.addEventListener("load", function () {
   preloader.classList.add("loaded");
   document.body.classList.add("loaded");
 });
-
 
 /////////////////////////
 /////////////////////////
@@ -93,14 +83,13 @@ arrLeft.addEventListener("click", function () {
   goToSlide(curSlide);
 });
 
- // Automatic Slide
- const autoSlide = function() {
+// Automatic Slide
+const autoSlide = function () {
   curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
   goToSlide(curSlide);
 };
 
 setInterval(autoSlide, 7000);
-
 
 /////////////////////////
 /////////////////////////
@@ -117,8 +106,6 @@ closeBtn.addEventListener("click", function () {
 heroHomePage.addEventListener("click", () => {
   navQuickLinks.classList.remove("slidingNav");
 });
-
-
 
 /////////////////////////
 /////////////////////////
@@ -141,8 +128,6 @@ heroHomePage.addEventListener("click", () => {
 //            console.log(55);
 //         }, 3000);
 //        }
-
-
 
 /////////////////////////
 /////////////////////////
@@ -180,7 +165,6 @@ const formattedDate = new Intl.DateTimeFormat(locale, options).format(
 );
 const [month, day, year] = formattedDate.split("/");
 const formattedDateString = `${year}-${month}-${day}`;
-console.log(formattedDateString);
 
 document.getElementById("reservation-date").value = formattedDateString;
 
@@ -195,10 +179,15 @@ function handleStrengthHover() {
 }
 
 strengthHover.forEach((card) => {
-  
-  ["mouseover", "touchstart"].forEach(e => card.addEventListener(e, handleStrengthHover));
+  ["mouseover", "touchstart"].forEach((e) =>
+    card.addEventListener(e, handleStrengthHover)
+  );
 });
 
+// CopyRight Year
+copyrightYear.innerHTML = new Date().getFullYear();
+
+// strengthHover.forEach((card) => {
 //EVENT PROPAGATION
 // const strengthContainer = document.getElementById('strengthContainer');
 
@@ -222,6 +211,5 @@ strengthHover.forEach((card) => {
 // slides.forEach((s, i) => {
 //   s.style.transform = `translateX(${100 * i}%)`
 // });
-
 
 // Change data-name when the after pseudo class is n focus
