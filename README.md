@@ -24,3 +24,4 @@ To run this project locally:
 ![Grilli Homepage](./Screenshot.png)
 
 ## ✨ Live Demo
+(https://grilli-restaurant-thecodegal.netlify.app/)
