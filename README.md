@@ -1,8 +1,23 @@
-# GRILLI - AMAZING & DELICIOUS FOOD
-This project is a faithful replication of the Grilli website originally designed by codewithsadee. This endeavor aims to showcase the implementation of key features and design elements present in the original website.
+# 📌 GRILLI - AMAZING & DELICIOUS FOOD
+Grilli is a modern and responsive restaurant website built with HTML, CSS, and JavaScript. It showcases a stylish homepage, menu section, reservation form, and more—ideal for restaurant or food-related businesses.
 
-## USAGE
-To use the GRILLI - AMAZING & DELICIOUS FOOD, simply clone the repository and open the index.html file in your web browser. Customize the website's styling by modifying the CSS file according to your preferences.
+## 🌟 Features
+- Responsive design for all screen sizes
+- Interactive navigation menu
+- Smooth scrolling and animations
+- Menu section with food categories
 
-## LICENSE
-This project is licensed under the MIT License, allowing for free and open-source use, modification, and distribution.
+## 🛠 Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+
+## 🚀 Getting Started
+To run this project locally:
+1. Clone the repository
+   `git clone https://github.com/estheroluwabuyi/grilli.git`
+2. Navigate into the project folder
+   `cd grilli`
+3. Open index.html in your browser
+
+## 📷 Screenshots
