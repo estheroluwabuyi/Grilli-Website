@@ -21,3 +21,7 @@ To run this project locally:
 3. Open index.html in your browser
 
 ## 📷 Screenshots
+![Grilli Homepage](./Screenshot.png)
+
+## ✨ Live Demo
+(https://grilli-restaurant-thecodegal.netlify.app/)
