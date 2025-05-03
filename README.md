@@ -15,9 +15,9 @@ Grilli is a modern and responsive restaurant website built with HTML, CSS, and J
 ## 🚀 Getting Started
 To run this project locally:
 1. Clone the repository
-   `git clone https://github.com/estheroluwabuyi/grilli.git`
+   `git clone  https://github.com/estheroluwabuyi/Grilli-Website.git`
 2. Navigate into the project folder
-   `cd grilli`
+   `cd Grilli-Website`
 3. Open index.html in your browser
 
 ## 📷 Screenshots
