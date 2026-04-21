@@ -63,7 +63,7 @@ html {
 ::-webkit-scrollbar {
   width: 7px;
 }
-z ::-webkit-scrollbar-track {
+ ::-webkit-scrollbar-track {
   background: var(--EERIE-BLACK);
 }
 
